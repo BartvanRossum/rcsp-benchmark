@@ -1,6 +1,6 @@
 # RCSP Benchmark — Railway Crew Scheduling Problem
 
-A benchmark library of synthetic instances for the **Railway Crew Scheduling Problem (RCSP)**, accompanying the paper:
+A benchmark library of synthetic instances and best-known solutions for the **Railway Crew Scheduling Problem (RCSP)**, accompanying the paper:
 
 > B.T.C. van Rossum, *Branch-and-Price for Railway Crew Scheduling: Benchmark Instances and Computational Study*.
 
