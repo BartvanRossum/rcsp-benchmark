@@ -37,9 +37,11 @@ instances/
         crewBases.txt
         tracks.txt
         geoStations.txt
+solutions/
+    solution_s{S}_t{T}.txt
 ```
 
-See [`instances/README.md`](instances/README.md) for a description of each file format.
+See [`instances/README.md`](instances/README.md) for a description of the instance files, and [`solutions/README.md`](solutions/README.md) for a description of the solution files.
 
 ## Generation
 
