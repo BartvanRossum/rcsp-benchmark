@@ -39,6 +39,7 @@ instances/
         geoStations.txt
 solutions/
     solution_s{S}_t{T}.txt
+checker.jar
 ```
 
 See [`instances/README.md`](instances/README.md) for a description of the instance files, and [`solutions/README.md`](solutions/README.md) for a description of the solution files.
