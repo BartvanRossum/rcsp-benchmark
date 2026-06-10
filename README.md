@@ -2,7 +2,8 @@
 
 A benchmark library of synthetic instances and best-known solutions for the **Railway Crew Scheduling Problem (RCSP)**, accompanying the paper:
 
-> B.T.C. van Rossum, *Branch-and-Price for Railway Crew Scheduling: Benchmark Instances and Computational Study*.
+> B.T.C. van Rossum (2026). *Branch and Price for Railway Crew Scheduling: Benchmark Instances and Computational Study*.
+> [[arXiv:2606.10081]](https://arxiv.org/abs/2606.10081)
 
 ## Instance Overview
 
@@ -76,8 +77,9 @@ If you use these instances in your research, please cite:
 ```
 @article{vanrossum2026rcsp,
   author  = {van Rossum, B.T.C.},
-  title   = {Branch-and-Price for Railway Crew Scheduling: Benchmark Instances and Computational Study},
-  year    = {2026},
+  title   = {Branch and Price for Railway Crew Scheduling: Benchmark Instances and Computational Study},
+  note={Preprint: \url{https://arxiv.org/abs/2606.10081}},
+  year={2026},
 }
 ```
 
