@@ -47,13 +47,13 @@ One station per line. Fields (space-separated):
 index  name
 ```
 
-All large stations in the infrastructure network, which are the candidate start and end points for tasks.
+All large stations in the infrastructure network, which are the candidate start and end points for tasks. The number of large stations equals `S` in the instance name.
 
 ---
 
 ## crewBases.txt
 
-Same format as `stations.txt`. Lists the subset of stations that serve as crew bases (depots). The number of crew bases equals `S` in the instance name.
+Same format as `stations.txt`. Lists the subset of stations that serve as crew bases (depots). 
 
 ---
 
