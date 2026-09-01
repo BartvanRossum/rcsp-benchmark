@@ -7,13 +7,14 @@ A benchmark library of synthetic instances and best-known solutions for the **Ra
 
 ## Instance Overview
 
-The library contains **75 instances** partitioned into three size groups:
+The library contains **100 instances** partitioned into four size groups:
 
 | Group  | Instances | Min tasks | Max tasks | Avg. tasks | Avg. connections |
-|--------|-----------|-----------|-----------|-----------|-----------------|
-| Small  | 25        | 450       | 991       | 704       | 9,420           |
-| Medium | 25        | 1,014     | 1,955     | 1,414     | 24,358          |
-| Large  | 25        | 2,029     | 3,016     | 2,440     | 53,345          |
+|--------|-----------|-----------|-----------|------------|------------------|
+| Tiny   | 25        | 90        | 482       | 276        | 2,843            |
+| Small  | 25        | 501       | 991       | 715        | 9,745            |
+| Medium | 25        | 1,014     | 1,955     | 1,414      | 24,357           |
+| Large  | 25        | 2,029     | 3,016     | 2,440      | 53,339           |
 
 Each instance is named `s{S}_t{T}`, where `S` is the number of large stations (where crew members can transfer) and `T` is the number of tasks.
 
@@ -23,7 +24,9 @@ The RCSP asks for a minimum-cost set of *duties* — sequences of tasks performe
 Each duty must satisfy the following labour rules:
 - Start and end at a crew base (depot)
 - Total duty length at most 9.5 hours
-- Exactly one meal break of at least 30 minutes, with no more than 5.5 hours of continuous work before or after the break
+- Contain a meal break of at least 30 minutes such that at most 5.5 hours of continuous work fall between the start of the duty and the start of the break, and at most 5.5 hours between the end of the break and the end of the duty
+
+Certain connections are designated as break arcs, on which a meal break may be taken. A duty is feasible with respect to the meal-break rule if it contains at least one break arc for which both the working time before and the working time after the break stay within the 5.5-hour limit.
 
 Costs consist of a variable component (1 unit per second of duty time) and a fixed component (equal to 8 hours of variable cost) charged once per duty.
 
@@ -64,7 +67,7 @@ java -jar checker.jar instances/s6_t450 solutions/solution_s6_t450.txt
 The checker verifies the following constraints:
 - Every duty starts and ends at a crew base
 - The total duty length does not exceed 9.5 hours
-- Every duty contains exactly one meal break of at least 30 minutes, with no more than 5.5 hours of continuous work before or after the break
+- Every duty contains at least one meal break of at least 30 minutes, with no more than 5.5 hours of continuous work before or after the break
 - Consecutive connections within a duty are compatible
 - All tasks are covered by at least one duty
 
