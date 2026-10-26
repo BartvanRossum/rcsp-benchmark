@@ -18,11 +18,17 @@ The library contains **100 instances** partitioned into four size groups:
 
 Each instance is named `s{S}_t{T}`, where `S` is the number of large stations (where crew members can transfer) and `T` is the number of tasks.
 
+Each instance is provided in two variants:
+- **Single-depot**: all duties start and end at a single, fixed crew base.
+- **Multi-depot**: every large station may serve as a crew base, but each duty must still start and end at the same crew base.
+
+The multi-depot variant is a relaxation of the single-depot one: every single-depot connection also appears in the multi-depot connections file, so a feasible single-depot solution is always a feasible multi-depot solution.
+
 ## Problem Description
 
 The RCSP asks for a minimum-cost set of *duties* — sequences of tasks performed by a single crew member in one working day — such that every task is covered at least once.
 Each duty must satisfy the following labour rules:
-- Start and end at a crew base (depot)
+- Start and end at the same crew base (depot)
 - Total duty length at most 9.5 hours
 - Contain a meal break of at least 30 minutes such that at most 5.5 hours of continuous work fall between the start of the duty and the start of the break, and at most 5.5 hours between the end of the break and the end of the duty
 
@@ -36,13 +42,18 @@ Costs consist of a variable component (1 unit per second of duty time) and a fix
 instances/
     s{S}_t{T}/
         tasks.txt
-        connections.txt
+        connections_single_depot.txt
+        connections_multi_depot.txt
         stations.txt
-        crewBases.txt
+        crewbases_single_depot.txt
+        crewbases_multi_depot.txt
         tracks.txt
         geoStations.txt
 solutions/
-    solution_s{S}_t{T}.txt
+    single_depot/
+        solution_single_depot_s{S}_t{T}.txt
+    multi_depot/
+        solution_multi_depot_s{S}_t{T}.txt
 checker.jar
 ```
 
@@ -58,14 +69,15 @@ Details are given in the accompanying paper.
 
 A standalone feasibility checker is provided as [`checker.jar`](checker.jar). It verifies whether a solution satisfies all constraints and reports the total cost. **Requirements:** Java 11 or higher.
 
-Run it as follows, where the two arguments are the instance folder and the solution file:
+Run it as follows, where the arguments are the instance folder, the solution file, and the variant (`single` or `multi`):
 
 ```bash
-java -jar checker.jar instances/s6_t450 solutions/solution_s6_t450.txt
+java -jar checker.jar instances/s6_t450 solutions/single_depot/solution_single_depot_s6_t450.txt single
+java -jar checker.jar instances/s6_t450 solutions/multi_depot/solution_multi_depot_s6_t450.txt multi
 ```
 
 The checker verifies the following constraints:
-- Every duty starts and ends at a crew base
+- Every duty starts and ends at the same crew base
 - The total duty length does not exceed 9.5 hours
 - Every duty contains at least one meal break of at least 30 minutes, with no more than 5.5 hours of continuous work before or after the break
 - Consecutive connections within a duty are compatible

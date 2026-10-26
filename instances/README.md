@@ -19,7 +19,7 @@ index startTime  endTime  startStation  endStation  duration
 
 ---
 
-## connections.txt
+## connections_single_depot.txt / connections_multi_depot.txt
 
 One connection per line. Fields (space-separated):
 
@@ -35,7 +35,9 @@ index  type  startBlock  endBlock  timeBeforeBreak  timeAfterBreak  duration  co
 - `duration` — connection duration in seconds
 - `cost` — connection cost in units (variable cost of 1 unit/second, plus a fixed cost of 28,800 units on SOURCE connections)
 
-A valid duty is a path SOURCE → CONNECTION* → SINK in the connection graph.
+A valid duty is a path SOURCE → CONNECTION* → SINK in the connection graph, where the SOURCE and SINK connections use the same depot station.
+
+`connections_single_depot.txt` only has SOURCE/SINK connections to/from the single station in `crewbases_single_depot.txt`. `connections_multi_depot.txt` additionally has SOURCE/SINK connections for every other station, so a duty may use any station as its depot (see `crewbases_multi_depot.txt`). Every connection in `connections_single_depot.txt` has the same index and fields in `connections_multi_depot.txt`, so a feasible single-depot solution is also a feasible multi-depot solution.
 
 ---
 
@@ -51,9 +53,9 @@ All large stations in the infrastructure network, which are the candidate start 
 
 ---
 
-## crewBases.txt
+## crewbases_single_depot.txt / crewbases_multi_depot.txt
 
-Same format as `stations.txt`. Lists the subset of stations that serve as crew bases (depots). 
+Same format as `stations.txt`. `crewbases_single_depot.txt` lists the single station that serves as the crew base (depot) in the single-depot variant. `crewbases_multi_depot.txt` lists every station in `stations.txt`, since any of them may serve as a crew base in the multi-depot variant.
 
 ---
 
