@@ -9,12 +9,12 @@ A benchmark library of synthetic instances and best-known solutions for the **Ra
 
 The library contains **100 instances** partitioned into four size groups:
 
-| Group  | Instances | Min tasks | Max tasks | Avg. tasks | Avg. connections |
-|--------|-----------|-----------|-----------|------------|------------------|
-| Tiny   | 25        | 90        | 482       | 276        | 2,843            |
-| Small  | 25        | 501       | 991       | 715        | 9,745            |
-| Medium | 25        | 1,014     | 1,955     | 1,414      | 24,357           |
-| Large  | 25        | 2,029     | 3,016     | 2,440      | 53,339           |
+| Group  | Instances | Min tasks | Max tasks | Avg. tasks | Avg. connections (single-depot) | Avg. connections (multi-depot) |
+|--------|-----------|-----------|-----------|------------|----------------------------------|---------------------------------|
+| Tiny   | 25        | 90        | 482       | 276        | 2,843                            | 3,205                           |
+| Small  | 25        | 501       | 991       | 715        | 9,745                             | 10,857                          |
+| Medium | 25        | 1,014     | 1,955     | 1,414      | 24,357                            | 26,744                          |
+| Large  | 25        | 2,029     | 3,016     | 2,440      | 53,339                            | 57,612                          |
 
 Each instance is named `s{S}_t{T}`, where `S` is the number of large stations (where crew members can transfer) and `T` is the number of tasks.
 
