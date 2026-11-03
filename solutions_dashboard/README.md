@@ -1324,8 +1324,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s20_t3016</code></td>
 <td align="right">16,181,075</td>
 <td align="right">16,184,454</td>
-<td align="right">16,279,800</td>
-<td align="right">0.59</td>
+<td align="right">16,278,960</td>
+<td align="right">0.58</td>
 <td align="right">277</td>
 <td align="right">14,703,742</td>
 <td align="right">14,704,066</td>
