@@ -653,8 +653,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">82</td>
 <td align="right">4,480,773</td>
 <td align="right">4,484,429</td>
-<td align="right">4,507,920</td>
-<td align="right">0.52</td>
+<td align="right">4,506,960</td>
+<td align="right">0.50</td>
 <td align="right">79</td>
 </tr>
 <tr>
