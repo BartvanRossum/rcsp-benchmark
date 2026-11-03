@@ -1272,8 +1272,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s19_t2711</code></td>
 <td align="right">15,915,564</td>
 <td align="right">15,919,393</td>
-<td align="right">15,988,620</td>
-<td align="right">0.43</td>
+<td align="right">15,976,200</td>
+<td align="right">0.36</td>
 <td align="right">270</td>
 <td align="right">14,476,229</td>
 <td align="right">14,477,151</td>
