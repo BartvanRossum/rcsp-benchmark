@@ -583,8 +583,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s9_t773</code></td>
 <td align="right">4,373,174</td>
 <td align="right">4,384,561</td>
-<td align="right">4,403,640</td>
-<td align="right">0.43</td>
+<td align="right">4,402,920</td>
+<td align="right">0.42</td>
 <td align="right">77</td>
 <td align="right">4,054,312</td>
 <td align="right">4,057,377</td>
