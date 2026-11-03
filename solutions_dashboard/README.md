@@ -783,7 +783,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">119</td>
 <td align="right">5,718,836</td>
 <td align="right">5,722,722</td>
-<td align="right">5,742,660</td>
+<td align="right">5,742,600</td>
 <td align="right">0.35</td>
 <td align="right">104</td>
 </tr>
