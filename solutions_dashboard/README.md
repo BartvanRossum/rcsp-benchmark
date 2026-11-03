@@ -1329,8 +1329,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">277</td>
 <td align="right">14,703,742</td>
 <td align="right">14,704,066</td>
-<td align="right">14,756,220</td>
-<td align="right">0.35</td>
+<td align="right">14,750,340</td>
+<td align="right">0.31</td>
 <td align="right">265</td>
 </tr>
 </tbody>
