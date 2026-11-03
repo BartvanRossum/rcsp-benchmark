@@ -726,8 +726,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s10_t1088</code></td>
 <td align="right">6,352,434</td>
 <td align="right">6,363,921</td>
-<td align="right">6,415,740</td>
-<td align="right">0.81</td>
+<td align="right">6,399,840</td>
+<td align="right">0.56</td>
 <td align="right">112</td>
 <td align="right">5,804,036</td>
 <td align="right">5,806,832</td>
