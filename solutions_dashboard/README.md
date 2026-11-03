@@ -1108,7 +1108,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">244</td>
 <td align="right">12,328,601</td>
 <td align="right">12,331,002</td>
-<td align="right">12,381,840</td>
+<td align="right">12,381,480</td>
 <td align="right">0.41</td>
 <td align="right">219</td>
 </tr>
