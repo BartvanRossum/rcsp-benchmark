@@ -466,8 +466,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s7_t627</code></td>
 <td align="right">3,785,095</td>
 <td align="right">3,796,950</td>
-<td align="right">3,799,800</td>
-<td align="right">0.08</td>
+<td align="right">3,799,320</td>
+<td align="right">0.06</td>
 <td align="right">67</td>
 <td align="right">3,536,373</td>
 <td align="right">3,540,021</td>
