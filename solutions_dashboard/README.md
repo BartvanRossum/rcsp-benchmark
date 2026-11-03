@@ -1038,7 +1038,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s16_t2136</code></td>
 <td align="right">12,715,984</td>
 <td align="right">12,719,602</td>
-<td align="right">12,787,980</td>
+<td align="right">12,787,260</td>
 <td align="right">0.53</td>
 <td align="right">217</td>
 <td align="right">11,405,783</td>
