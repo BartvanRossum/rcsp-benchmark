@@ -414,8 +414,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s6_t521</code></td>
 <td align="right">2,857,952</td>
 <td align="right">2,869,128</td>
-<td align="right">2,880,120</td>
-<td align="right">0.38</td>
+<td align="right">2,879,880</td>
+<td align="right">0.37</td>
 <td align="right">50</td>
 <td align="right">2,690,373</td>
 <td align="right">2,695,216</td>
