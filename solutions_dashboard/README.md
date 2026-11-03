@@ -596,8 +596,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s9_t775</code></td>
 <td align="right">4,566,158</td>
 <td align="right">4,580,470</td>
-<td align="right">4,600,560</td>
-<td align="right">0.44</td>
+<td align="right">4,597,200</td>
+<td align="right">0.36</td>
 <td align="right">81</td>
 <td align="right">4,212,572</td>
 <td align="right">4,216,509</td>
