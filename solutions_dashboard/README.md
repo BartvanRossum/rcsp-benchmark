@@ -1025,8 +1025,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s16_t2052</code></td>
 <td align="right">11,938,880</td>
 <td align="right">11,944,278</td>
-<td align="right">12,037,560</td>
-<td align="right">0.77</td>
+<td align="right">12,026,580</td>
+<td align="right">0.68</td>
 <td align="right">203</td>
 <td align="right">10,468,828</td>
 <td align="right">10,470,472</td>
