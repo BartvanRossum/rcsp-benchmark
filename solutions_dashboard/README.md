@@ -1043,8 +1043,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">217</td>
 <td align="right">11,405,783</td>
 <td align="right">11,406,933</td>
-<td align="right">11,446,920</td>
-<td align="right">0.35</td>
+<td align="right">11,443,200</td>
+<td align="right">0.32</td>
 <td align="right">209</td>
 </tr>
 <tr>
