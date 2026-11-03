@@ -1,0 +1,3607 @@
+{
+ "repo": "BartvanRossum/rcsp-benchmark",
+ "instances": [
+  {
+   "name": "s2_t90",
+   "stations": 2,
+   "tasks": 90,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 745680,
+    "best_lb": 748080,
+    "best_ub": 748080,
+    "gap": 0.0,
+    "duties": 14,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 728800,
+    "best_lb": 748080,
+    "best_ub": 748080,
+    "gap": 0.0,
+    "duties": 14,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s2_t118",
+   "stations": 2,
+   "tasks": 118,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1212642,
+    "best_lb": 1221780,
+    "best_ub": 1221780,
+    "gap": 0.0,
+    "duties": 22,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1200240,
+    "best_lb": 1201140,
+    "best_ub": 1201140,
+    "gap": 0.0,
+    "duties": 21,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s2_t120",
+   "stations": 2,
+   "tasks": 120,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 997710,
+    "best_lb": 1010640,
+    "best_ub": 1010640,
+    "gap": 0.0,
+    "duties": 19,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 975560,
+    "best_lb": 983880,
+    "best_ub": 983880,
+    "gap": 0.0,
+    "duties": 18,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s2_t122",
+   "stations": 2,
+   "tasks": 122,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 719000,
+    "best_lb": 740280,
+    "best_ub": 740280,
+    "gap": 0.0,
+    "duties": 14,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 711060,
+    "best_lb": 716460,
+    "best_ub": 716460,
+    "gap": 0.0,
+    "duties": 13,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s2_t131",
+   "stations": 2,
+   "tasks": 131,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1139400,
+    "best_lb": 1147500,
+    "best_ub": 1147500,
+    "gap": 0.0,
+    "duties": 21,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1123140,
+    "best_lb": 1123920,
+    "best_ub": 1123920,
+    "gap": 0.0,
+    "duties": 20,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s3_t168",
+   "stations": 3,
+   "tasks": 168,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1441980,
+    "best_lb": 1441980,
+    "best_ub": 1441980,
+    "gap": 0.0,
+    "duties": 26,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1411155,
+    "best_lb": 1414680,
+    "best_ub": 1414680,
+    "gap": 0.0,
+    "duties": 26,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s3_t172",
+   "stations": 3,
+   "tasks": 172,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1211690,
+    "best_lb": 1228380,
+    "best_ub": 1228380,
+    "gap": 0.0,
+    "duties": 22,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1199043,
+    "best_lb": 1209480,
+    "best_ub": 1209480,
+    "gap": 0.0,
+    "duties": 21,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s3_t228",
+   "stations": 3,
+   "tasks": 228,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1849665,
+    "best_lb": 1855440,
+    "best_ub": 1855440,
+    "gap": 0.0,
+    "duties": 33,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1811664,
+    "best_lb": 1819200,
+    "best_ub": 1819200,
+    "gap": 0.0,
+    "duties": 33,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s3_t232",
+   "stations": 3,
+   "tasks": 232,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1568227,
+    "best_lb": 1575840,
+    "best_ub": 1575840,
+    "gap": 0.0,
+    "duties": 27,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1558232,
+    "best_lb": 1561560,
+    "best_ub": 1561560,
+    "gap": 0.0,
+    "duties": 27,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s3_t262",
+   "stations": 3,
+   "tasks": 262,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1850628,
+    "best_lb": 1862520,
+    "best_ub": 1862520,
+    "gap": 0.0,
+    "duties": 32,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1749558,
+    "best_lb": 1761300,
+    "best_ub": 1761300,
+    "gap": 0.0,
+    "duties": 31,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s3_t300",
+   "stations": 3,
+   "tasks": 300,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1992091,
+    "best_lb": 2005200,
+    "best_ub": 2005200,
+    "gap": 0.0,
+    "duties": 36,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1939398,
+    "best_lb": 1941660,
+    "best_ub": 1941660,
+    "gap": 0.0,
+    "duties": 35,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s3_t337",
+   "stations": 3,
+   "tasks": 337,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 2542520,
+    "best_lb": 2552400,
+    "best_ub": 2552400,
+    "gap": 0.0,
+    "duties": 43,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 2375106,
+    "best_lb": 2383200,
+    "best_ub": 2383200,
+    "gap": 0.0,
+    "duties": 41,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s4_t273",
+   "stations": 4,
+   "tasks": 273,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1161816,
+    "best_lb": 1169640,
+    "best_ub": 1169640,
+    "gap": 0.0,
+    "duties": 21,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1117997,
+    "best_lb": 1118460,
+    "best_ub": 1118460,
+    "gap": 0.0,
+    "duties": 20,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s4_t290",
+   "stations": 4,
+   "tasks": 290,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1671952,
+    "best_lb": 1676820,
+    "best_ub": 1676820,
+    "gap": 0.0,
+    "duties": 30,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1631119,
+    "best_lb": 1633680,
+    "best_ub": 1633680,
+    "gap": 0.0,
+    "duties": 29,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s4_t297",
+   "stations": 4,
+   "tasks": 297,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1711780,
+    "best_lb": 1725720,
+    "best_ub": 1725720,
+    "gap": 0.0,
+    "duties": 31,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1660696,
+    "best_lb": 1661280,
+    "best_ub": 1661280,
+    "gap": 0.0,
+    "duties": 30,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s4_t311",
+   "stations": 4,
+   "tasks": 311,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 2270068,
+    "best_lb": 2272440,
+    "best_ub": 2272440,
+    "gap": 0.0,
+    "duties": 40,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 2205150,
+    "best_lb": 2208360,
+    "best_ub": 2208360,
+    "gap": 0.0,
+    "duties": 40,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s4_t313",
+   "stations": 4,
+   "tasks": 313,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 2086800,
+    "best_lb": 2095620,
+    "best_ub": 2095620,
+    "gap": 0.0,
+    "duties": 37,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1994272,
+    "best_lb": 1996980,
+    "best_ub": 1996980,
+    "gap": 0.0,
+    "duties": 35,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s4_t320",
+   "stations": 4,
+   "tasks": 320,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 2377312,
+    "best_lb": 2385300,
+    "best_ub": 2385300,
+    "gap": 0.0,
+    "duties": 42,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 2313277,
+    "best_lb": 2317440,
+    "best_ub": 2317440,
+    "gap": 0.0,
+    "duties": 41,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s5_t333",
+   "stations": 5,
+   "tasks": 333,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1659480,
+    "best_lb": 1659480,
+    "best_ub": 1659480,
+    "gap": 0.0,
+    "duties": 30,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1584592,
+    "best_lb": 1584840,
+    "best_ub": 1584840,
+    "gap": 0.0,
+    "duties": 30,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s5_t349",
+   "stations": 5,
+   "tasks": 349,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1325476,
+    "best_lb": 1333560,
+    "best_ub": 1333560,
+    "gap": 0.0,
+    "duties": 24,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1250717,
+    "best_lb": 1258080,
+    "best_ub": 1258080,
+    "gap": 0.0,
+    "duties": 22,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s5_t385",
+   "stations": 5,
+   "tasks": 385,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1642921,
+    "best_lb": 1651380,
+    "best_ub": 1653120,
+    "gap": 0.11,
+    "duties": 29,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1570116,
+    "best_lb": 1571880,
+    "best_ub": 1571880,
+    "gap": 0.0,
+    "duties": 28,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s5_t409",
+   "stations": 5,
+   "tasks": 409,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1853776,
+    "best_lb": 1854900,
+    "best_ub": 1854900,
+    "gap": 0.0,
+    "duties": 34,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1813958,
+    "best_lb": 1814700,
+    "best_ub": 1814700,
+    "gap": 0.0,
+    "duties": 34,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s5_t413",
+   "stations": 5,
+   "tasks": 413,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 1683662,
+    "best_lb": 1701840,
+    "best_ub": 1701840,
+    "gap": 0.0,
+    "duties": 30,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1623060,
+    "best_lb": 1624620,
+    "best_ub": 1624620,
+    "gap": 0.0,
+    "duties": 29,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s6_t450",
+   "stations": 6,
+   "tasks": 450,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 2444367,
+    "best_lb": 2451720,
+    "best_ub": 2451720,
+    "gap": 0.0,
+    "duties": 43,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 2363507,
+    "best_lb": 2368593,
+    "best_ub": 2370540,
+    "gap": 0.08,
+    "duties": 42,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s6_t482",
+   "stations": 6,
+   "tasks": 482,
+   "group": "Tiny",
+   "single": {
+    "root_lb": 2861635,
+    "best_lb": 2864880,
+    "best_ub": 2868240,
+    "gap": 0.12,
+    "duties": 50,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 2688349,
+    "best_lb": 2691240,
+    "best_ub": 2691240,
+    "gap": 0.0,
+    "duties": 49,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s5_t501",
+   "stations": 5,
+   "tasks": 501,
+   "group": "Small",
+   "single": {
+    "root_lb": 1931348,
+    "best_lb": 1942468,
+    "best_ub": 1951260,
+    "gap": 0.45,
+    "duties": 34,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 1871901,
+    "best_lb": 1878394,
+    "best_ub": 1879800,
+    "gap": 0.07,
+    "duties": 33,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s5_t591",
+   "stations": 5,
+   "tasks": 591,
+   "group": "Small",
+   "single": {
+    "root_lb": 2439440,
+    "best_lb": 2440976,
+    "best_ub": 2441040,
+    "gap": 0.0,
+    "duties": 44,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 2341780,
+    "best_lb": 2343393,
+    "best_ub": 2346600,
+    "gap": 0.14,
+    "duties": 42,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s6_t514",
+   "stations": 6,
+   "tasks": 514,
+   "group": "Small",
+   "single": {
+    "root_lb": 3514748,
+    "best_lb": 3528422,
+    "best_ub": 3532800,
+    "gap": 0.12,
+    "duties": 61,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3196426,
+    "best_lb": 3200895,
+    "best_ub": 3202320,
+    "gap": 0.04,
+    "duties": 57,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s6_t518",
+   "stations": 6,
+   "tasks": 518,
+   "group": "Small",
+   "single": {
+    "root_lb": 2708987,
+    "best_lb": 2712000,
+    "best_ub": 2712000,
+    "gap": 0.0,
+    "duties": 46,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 2558366,
+    "best_lb": 2559996,
+    "best_ub": 2560920,
+    "gap": 0.04,
+    "duties": 46,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s6_t521",
+   "stations": 6,
+   "tasks": 521,
+   "group": "Small",
+   "single": {
+    "root_lb": 2857952,
+    "best_lb": 2869128,
+    "best_ub": 2880120,
+    "gap": 0.38,
+    "duties": 50,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 2690373,
+    "best_lb": 2695216,
+    "best_ub": 2696580,
+    "gap": 0.05,
+    "duties": 48,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s6_t580",
+   "stations": 6,
+   "tasks": 580,
+   "group": "Small",
+   "single": {
+    "root_lb": 4521585,
+    "best_lb": 4534807,
+    "best_ub": 4561380,
+    "gap": 0.58,
+    "duties": 78,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 4312151,
+    "best_lb": 4320132,
+    "best_ub": 4330920,
+    "gap": 0.25,
+    "duties": 76,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s7_t570",
+   "stations": 7,
+   "tasks": 570,
+   "group": "Small",
+   "single": {
+    "root_lb": 3572503,
+    "best_lb": 3588419,
+    "best_ub": 3589680,
+    "gap": 0.04,
+    "duties": 63,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3375250,
+    "best_lb": 3385253,
+    "best_ub": 3391680,
+    "gap": 0.19,
+    "duties": 60,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s7_t599",
+   "stations": 7,
+   "tasks": 599,
+   "group": "Small",
+   "single": {
+    "root_lb": 3473001,
+    "best_lb": 3482597,
+    "best_ub": 3482820,
+    "gap": 0.01,
+    "duties": 61,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3280091,
+    "best_lb": 3284272,
+    "best_ub": 3297480,
+    "gap": 0.4,
+    "duties": 58,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s7_t627",
+   "stations": 7,
+   "tasks": 627,
+   "group": "Small",
+   "single": {
+    "root_lb": 3785095,
+    "best_lb": 3796950,
+    "best_ub": 3799800,
+    "gap": 0.08,
+    "duties": 67,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3536373,
+    "best_lb": 3540021,
+    "best_ub": 3545940,
+    "gap": 0.17,
+    "duties": 63,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s7_t681",
+   "stations": 7,
+   "tasks": 681,
+   "group": "Small",
+   "single": {
+    "root_lb": 3315261,
+    "best_lb": 3333440,
+    "best_ub": 3358680,
+    "gap": 0.75,
+    "duties": 58,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3084196,
+    "best_lb": 3087013,
+    "best_ub": 3096240,
+    "gap": 0.3,
+    "duties": 55,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s7_t695",
+   "stations": 7,
+   "tasks": 695,
+   "group": "Small",
+   "single": {
+    "root_lb": 3867536,
+    "best_lb": 3873529,
+    "best_ub": 3885720,
+    "gap": 0.31,
+    "duties": 67,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3619377,
+    "best_lb": 3622008,
+    "best_ub": 3625620,
+    "gap": 0.1,
+    "duties": 65,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s7_t738",
+   "stations": 7,
+   "tasks": 738,
+   "group": "Small",
+   "single": {
+    "root_lb": 3958744,
+    "best_lb": 3968197,
+    "best_ub": 3985920,
+    "gap": 0.44,
+    "duties": 68,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3657380,
+    "best_lb": 3661081,
+    "best_ub": 3668820,
+    "gap": 0.21,
+    "duties": 65,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s8_t628",
+   "stations": 8,
+   "tasks": 628,
+   "group": "Small",
+   "single": {
+    "root_lb": 4120124,
+    "best_lb": 4129320,
+    "best_ub": 4173900,
+    "gap": 1.07,
+    "duties": 72,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3736804,
+    "best_lb": 3739828,
+    "best_ub": 3746820,
+    "gap": 0.19,
+    "duties": 65,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s8_t681",
+   "stations": 8,
+   "tasks": 681,
+   "group": "Small",
+   "single": {
+    "root_lb": 4257209,
+    "best_lb": 4266438,
+    "best_ub": 4294380,
+    "gap": 0.65,
+    "duties": 74,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3883493,
+    "best_lb": 3886140,
+    "best_ub": 3886140,
+    "gap": 0.0,
+    "duties": 71,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s8_t694",
+   "stations": 8,
+   "tasks": 694,
+   "group": "Small",
+   "single": {
+    "root_lb": 4541909,
+    "best_lb": 4553863,
+    "best_ub": 4577040,
+    "gap": 0.51,
+    "duties": 80,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 4270748,
+    "best_lb": 4273749,
+    "best_ub": 4286700,
+    "gap": 0.3,
+    "duties": 77,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s8_t734",
+   "stations": 8,
+   "tasks": 734,
+   "group": "Small",
+   "single": {
+    "root_lb": 3793613,
+    "best_lb": 3803805,
+    "best_ub": 3825540,
+    "gap": 0.57,
+    "duties": 67,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3516953,
+    "best_lb": 3519694,
+    "best_ub": 3526980,
+    "gap": 0.21,
+    "duties": 63,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s8_t872",
+   "stations": 8,
+   "tasks": 872,
+   "group": "Small",
+   "single": {
+    "root_lb": 5253048,
+    "best_lb": 5265660,
+    "best_ub": 5323500,
+    "gap": 1.09,
+    "duties": 92,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 4904474,
+    "best_lb": 4907288,
+    "best_ub": 4924980,
+    "gap": 0.36,
+    "duties": 86,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s9_t773",
+   "stations": 9,
+   "tasks": 773,
+   "group": "Small",
+   "single": {
+    "root_lb": 4373174,
+    "best_lb": 4384561,
+    "best_ub": 4409760,
+    "gap": 0.57,
+    "duties": 77,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 4054312,
+    "best_lb": 4057377,
+    "best_ub": 4064340,
+    "gap": 0.17,
+    "duties": 73,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s9_t775",
+   "stations": 9,
+   "tasks": 775,
+   "group": "Small",
+   "single": {
+    "root_lb": 4566158,
+    "best_lb": 4580470,
+    "best_ub": 4608780,
+    "gap": 0.61,
+    "duties": 81,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 4212572,
+    "best_lb": 4216509,
+    "best_ub": 4232580,
+    "gap": 0.38,
+    "duties": 76,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s9_t784",
+   "stations": 9,
+   "tasks": 784,
+   "group": "Small",
+   "single": {
+    "root_lb": 4266799,
+    "best_lb": 4275539,
+    "best_ub": 4284180,
+    "gap": 0.2,
+    "duties": 75,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 3982069,
+    "best_lb": 3986176,
+    "best_ub": 3992460,
+    "gap": 0.16,
+    "duties": 72,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s9_t946",
+   "stations": 9,
+   "tasks": 946,
+   "group": "Small",
+   "single": {
+    "root_lb": 5564229,
+    "best_lb": 5572249,
+    "best_ub": 5590680,
+    "gap": 0.33,
+    "duties": 97,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 5256955,
+    "best_lb": 5259692,
+    "best_ub": 5272380,
+    "gap": 0.24,
+    "duties": 95,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s9_t972",
+   "stations": 9,
+   "tasks": 972,
+   "group": "Small",
+   "single": {
+    "root_lb": 5076012,
+    "best_lb": 5083015,
+    "best_ub": 5134260,
+    "gap": 1.0,
+    "duties": 90,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 4768967,
+    "best_lb": 4771382,
+    "best_ub": 4787940,
+    "gap": 0.35,
+    "duties": 86,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s9_t991",
+   "stations": 9,
+   "tasks": 991,
+   "group": "Small",
+   "single": {
+    "root_lb": 4801999,
+    "best_lb": 4809359,
+    "best_ub": 4831620,
+    "gap": 0.46,
+    "duties": 82,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 4480773,
+    "best_lb": 4484429,
+    "best_ub": 4507920,
+    "gap": 0.52,
+    "duties": 79,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s10_t928",
+   "stations": 10,
+   "tasks": 928,
+   "group": "Small",
+   "single": {
+    "root_lb": 5818100,
+    "best_lb": 5831520,
+    "best_ub": 5900040,
+    "gap": 1.16,
+    "duties": 103,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 5213343,
+    "best_lb": 5217440,
+    "best_ub": 5235000,
+    "gap": 0.34,
+    "duties": 96,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s11_t961",
+   "stations": 11,
+   "tasks": 961,
+   "group": "Small",
+   "single": {
+    "root_lb": 6036364,
+    "best_lb": 6046847,
+    "best_ub": 6108540,
+    "gap": 1.01,
+    "duties": 108,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 5236197,
+    "best_lb": 5239202,
+    "best_ub": 5256000,
+    "gap": 0.32,
+    "duties": 97,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s9_t1020",
+   "stations": 9,
+   "tasks": 1020,
+   "group": "Medium",
+   "single": {
+    "root_lb": 5656977,
+    "best_lb": 5662419,
+    "best_ub": 5694780,
+    "gap": 0.57,
+    "duties": 97,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 5161683,
+    "best_lb": 5165267,
+    "best_ub": 5182380,
+    "gap": 0.33,
+    "duties": 89,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s10_t1014",
+   "stations": 10,
+   "tasks": 1014,
+   "group": "Medium",
+   "single": {
+    "root_lb": 5784168,
+    "best_lb": 5793198,
+    "best_ub": 5821860,
+    "gap": 0.49,
+    "duties": 102,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 5415092,
+    "best_lb": 5418400,
+    "best_ub": 5432940,
+    "gap": 0.27,
+    "duties": 98,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s10_t1016",
+   "stations": 10,
+   "tasks": 1016,
+   "group": "Medium",
+   "single": {
+    "root_lb": 5722362,
+    "best_lb": 5729371,
+    "best_ub": 5770740,
+    "gap": 0.72,
+    "duties": 101,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 5345895,
+    "best_lb": 5348589,
+    "best_ub": 5365800,
+    "gap": 0.32,
+    "duties": 98,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s10_t1088",
+   "stations": 10,
+   "tasks": 1088,
+   "group": "Medium",
+   "single": {
+    "root_lb": 6352434,
+    "best_lb": 6363921,
+    "best_ub": 6415740,
+    "gap": 0.81,
+    "duties": 112,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 5804036,
+    "best_lb": 5806832,
+    "best_ub": 5826240,
+    "gap": 0.33,
+    "duties": 103,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s11_t1078",
+   "stations": 11,
+   "tasks": 1078,
+   "group": "Medium",
+   "single": {
+    "root_lb": 6694088,
+    "best_lb": 6700406,
+    "best_ub": 6735120,
+    "gap": 0.52,
+    "duties": 116,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 6140054,
+    "best_lb": 6142352,
+    "best_ub": 6160680,
+    "gap": 0.3,
+    "duties": 111,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s11_t1151",
+   "stations": 11,
+   "tasks": 1151,
+   "group": "Medium",
+   "single": {
+    "root_lb": 6781233,
+    "best_lb": 6790106,
+    "best_ub": 6858120,
+    "gap": 0.99,
+    "duties": 117,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 6158369,
+    "best_lb": 6161425,
+    "best_ub": 6173640,
+    "gap": 0.2,
+    "duties": 111,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s11_t1204",
+   "stations": 11,
+   "tasks": 1204,
+   "group": "Medium",
+   "single": {
+    "root_lb": 6532036,
+    "best_lb": 6540270,
+    "best_ub": 6582900,
+    "gap": 0.65,
+    "duties": 114,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 6106999,
+    "best_lb": 6109832,
+    "best_ub": 6145740,
+    "gap": 0.58,
+    "duties": 107,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s12_t1049",
+   "stations": 12,
+   "tasks": 1049,
+   "group": "Medium",
+   "single": {
+    "root_lb": 6878240,
+    "best_lb": 6889604,
+    "best_ub": 6979860,
+    "gap": 1.29,
+    "duties": 119,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 5718836,
+    "best_lb": 5722722,
+    "best_ub": 5742660,
+    "gap": 0.35,
+    "duties": 104,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s12_t1459",
+   "stations": 12,
+   "tasks": 1459,
+   "group": "Medium",
+   "single": {
+    "root_lb": 7570579,
+    "best_lb": 7576125,
+    "best_ub": 7637520,
+    "gap": 0.8,
+    "duties": 131,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 7010843,
+    "best_lb": 7012799,
+    "best_ub": 7037040,
+    "gap": 0.34,
+    "duties": 128,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s12_t1482",
+   "stations": 12,
+   "tasks": 1482,
+   "group": "Medium",
+   "single": {
+    "root_lb": 8496623,
+    "best_lb": 8502321,
+    "best_ub": 8557440,
+    "gap": 0.64,
+    "duties": 144,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 7623706,
+    "best_lb": 7628849,
+    "best_ub": 7664520,
+    "gap": 0.47,
+    "duties": 132,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s12_t1498",
+   "stations": 12,
+   "tasks": 1498,
+   "group": "Medium",
+   "single": {
+    "root_lb": 7951231,
+    "best_lb": 7960595,
+    "best_ub": 8040960,
+    "gap": 1.0,
+    "duties": 136,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 7141899,
+    "best_lb": 7145873,
+    "best_ub": 7197540,
+    "gap": 0.72,
+    "duties": 125,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s13_t1286",
+   "stations": 13,
+   "tasks": 1286,
+   "group": "Medium",
+   "single": {
+    "root_lb": 8070378,
+    "best_lb": 8079261,
+    "best_ub": 8155980,
+    "gap": 0.94,
+    "duties": 140,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 7056461,
+    "best_lb": 7058781,
+    "best_ub": 7090320,
+    "gap": 0.44,
+    "duties": 124,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s13_t1351",
+   "stations": 13,
+   "tasks": 1351,
+   "group": "Medium",
+   "single": {
+    "root_lb": 6856205,
+    "best_lb": 6863829,
+    "best_ub": 6915240,
+    "gap": 0.74,
+    "duties": 120,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 6247774,
+    "best_lb": 6249757,
+    "best_ub": 6271560,
+    "gap": 0.35,
+    "duties": 112,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s13_t1372",
+   "stations": 13,
+   "tasks": 1372,
+   "group": "Medium",
+   "single": {
+    "root_lb": 8350945,
+    "best_lb": 8361823,
+    "best_ub": 8459580,
+    "gap": 1.16,
+    "duties": 146,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 7452535,
+    "best_lb": 7454846,
+    "best_ub": 7474860,
+    "gap": 0.27,
+    "duties": 135,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s13_t1532",
+   "stations": 13,
+   "tasks": 1532,
+   "group": "Medium",
+   "single": {
+    "root_lb": 9050466,
+    "best_lb": 9056799,
+    "best_ub": 9115680,
+    "gap": 0.65,
+    "duties": 154,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 8128086,
+    "best_lb": 8130272,
+    "best_ub": 8160240,
+    "gap": 0.37,
+    "duties": 146,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s13_t1591",
+   "stations": 13,
+   "tasks": 1591,
+   "group": "Medium",
+   "single": {
+    "root_lb": 8716345,
+    "best_lb": 8720590,
+    "best_ub": 8757720,
+    "gap": 0.42,
+    "duties": 153,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 8246490,
+    "best_lb": 8248519,
+    "best_ub": 8269680,
+    "gap": 0.26,
+    "duties": 152,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s13_t1598",
+   "stations": 13,
+   "tasks": 1598,
+   "group": "Medium",
+   "single": {
+    "root_lb": 8590185,
+    "best_lb": 8596695,
+    "best_ub": 8664360,
+    "gap": 0.78,
+    "duties": 149,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 7670143,
+    "best_lb": 7672742,
+    "best_ub": 7706700,
+    "gap": 0.44,
+    "duties": 139,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s14_t1500",
+   "stations": 14,
+   "tasks": 1500,
+   "group": "Medium",
+   "single": {
+    "root_lb": 8835895,
+    "best_lb": 8845046,
+    "best_ub": 8880420,
+    "gap": 0.4,
+    "duties": 154,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 8222074,
+    "best_lb": 8224192,
+    "best_ub": 8245860,
+    "gap": 0.26,
+    "duties": 150,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s14_t1511",
+   "stations": 14,
+   "tasks": 1511,
+   "group": "Medium",
+   "single": {
+    "root_lb": 9167303,
+    "best_lb": 9173645,
+    "best_ub": 9257400,
+    "gap": 0.9,
+    "duties": 157,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 7817050,
+    "best_lb": 7818507,
+    "best_ub": 7838760,
+    "gap": 0.26,
+    "duties": 144,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s14_t1629",
+   "stations": 14,
+   "tasks": 1629,
+   "group": "Medium",
+   "single": {
+    "root_lb": 10146016,
+    "best_lb": 10151858,
+    "best_ub": 10212780,
+    "gap": 0.6,
+    "duties": 177,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 8333186,
+    "best_lb": 8335086,
+    "best_ub": 8358000,
+    "gap": 0.27,
+    "duties": 149,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s14_t1755",
+   "stations": 14,
+   "tasks": 1755,
+   "group": "Medium",
+   "single": {
+    "root_lb": 10283388,
+    "best_lb": 10289863,
+    "best_ub": 10356000,
+    "gap": 0.64,
+    "duties": 176,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 9408259,
+    "best_lb": 9409947,
+    "best_ub": 9432780,
+    "gap": 0.24,
+    "duties": 170,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s15_t1713",
+   "stations": 15,
+   "tasks": 1713,
+   "group": "Medium",
+   "single": {
+    "root_lb": 10034985,
+    "best_lb": 10041287,
+    "best_ub": 10130340,
+    "gap": 0.88,
+    "duties": 172,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 8823104,
+    "best_lb": 8825561,
+    "best_ub": 8869920,
+    "gap": 0.5,
+    "duties": 156,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s15_t1745",
+   "stations": 15,
+   "tasks": 1745,
+   "group": "Medium",
+   "single": {
+    "root_lb": 10366864,
+    "best_lb": 10372707,
+    "best_ub": 10458720,
+    "gap": 0.82,
+    "duties": 177,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 9112295,
+    "best_lb": 9114199,
+    "best_ub": 9140520,
+    "gap": 0.29,
+    "duties": 164,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s15_t1749",
+   "stations": 15,
+   "tasks": 1749,
+   "group": "Medium",
+   "single": {
+    "root_lb": 9308113,
+    "best_lb": 9312168,
+    "best_ub": 9372480,
+    "gap": 0.64,
+    "duties": 162,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 8622494,
+    "best_lb": 8624236,
+    "best_ub": 8653620,
+    "gap": 0.34,
+    "duties": 158,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s17_t1955",
+   "stations": 17,
+   "tasks": 1955,
+   "group": "Medium",
+   "single": {
+    "root_lb": 11758675,
+    "best_lb": 11766551,
+    "best_ub": 11854920,
+    "gap": 0.75,
+    "duties": 204,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 10117389,
+    "best_lb": 10119161,
+    "best_ub": 10152660,
+    "gap": 0.33,
+    "duties": 186,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s15_t2029",
+   "stations": 15,
+   "tasks": 2029,
+   "group": "Large",
+   "single": {
+    "root_lb": 11134303,
+    "best_lb": 11140680,
+    "best_ub": 11257260,
+    "gap": 1.04,
+    "duties": 190,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 9917645,
+    "best_lb": 9919298,
+    "best_ub": 9960660,
+    "gap": 0.42,
+    "duties": 177,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s16_t2052",
+   "stations": 16,
+   "tasks": 2052,
+   "group": "Large",
+   "single": {
+    "root_lb": 11938880,
+    "best_lb": 11944278,
+    "best_ub": 12045540,
+    "gap": 0.84,
+    "duties": 203,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 10468828,
+    "best_lb": 10470472,
+    "best_ub": 10514220,
+    "gap": 0.42,
+    "duties": 187,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s16_t2136",
+   "stations": 16,
+   "tasks": 2136,
+   "group": "Large",
+   "single": {
+    "root_lb": 12715984,
+    "best_lb": 12719602,
+    "best_ub": 12788520,
+    "gap": 0.54,
+    "duties": 217,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 11405783,
+    "best_lb": 11406933,
+    "best_ub": 11446920,
+    "gap": 0.35,
+    "duties": 209,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s16_t2219",
+   "stations": 16,
+   "tasks": 2219,
+   "group": "Large",
+   "single": {
+    "root_lb": 13318246,
+    "best_lb": 13324371,
+    "best_ub": 13437960,
+    "gap": 0.85,
+    "duties": 227,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 10702291,
+    "best_lb": 10703286,
+    "best_ub": 10741800,
+    "gap": 0.36,
+    "duties": 195,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s16_t2252",
+   "stations": 16,
+   "tasks": 2252,
+   "group": "Large",
+   "single": {
+    "root_lb": 12396038,
+    "best_lb": 12400856,
+    "best_ub": 12535440,
+    "gap": 1.07,
+    "duties": 214,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 11064280,
+    "best_lb": 11065751,
+    "best_ub": 11118060,
+    "gap": 0.47,
+    "duties": 200,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s17_t2090",
+   "stations": 17,
+   "tasks": 2090,
+   "group": "Large",
+   "single": {
+    "root_lb": 12436106,
+    "best_lb": 12441737,
+    "best_ub": 12525420,
+    "gap": 0.67,
+    "duties": 212,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 10852090,
+    "best_lb": 10853424,
+    "best_ub": 10891680,
+    "gap": 0.35,
+    "duties": 197,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s17_t2166",
+   "stations": 17,
+   "tasks": 2166,
+   "group": "Large",
+   "single": {
+    "root_lb": 14037157,
+    "best_lb": 14044780,
+    "best_ub": 14128740,
+    "gap": 0.59,
+    "duties": 238,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 11642240,
+    "best_lb": 11643649,
+    "best_ub": 11681700,
+    "gap": 0.33,
+    "duties": 214,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s17_t2183",
+   "stations": 17,
+   "tasks": 2183,
+   "group": "Large",
+   "single": {
+    "root_lb": 14290908,
+    "best_lb": 14297875,
+    "best_ub": 14451960,
+    "gap": 1.07,
+    "duties": 244,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 12328601,
+    "best_lb": 12331002,
+    "best_ub": 12381840,
+    "gap": 0.41,
+    "duties": 219,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s17_t2214",
+   "stations": 17,
+   "tasks": 2214,
+   "group": "Large",
+   "single": {
+    "root_lb": 12387240,
+    "best_lb": 12391876,
+    "best_ub": 12441960,
+    "gap": 0.4,
+    "duties": 216,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 10657805,
+    "best_lb": 10659956,
+    "best_ub": 10720080,
+    "gap": 0.56,
+    "duties": 187,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s17_t2242",
+   "stations": 17,
+   "tasks": 2242,
+   "group": "Large",
+   "single": {
+    "root_lb": 14742098,
+    "best_lb": 14748939,
+    "best_ub": 14952300,
+    "gap": 1.36,
+    "duties": 256,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 12606446,
+    "best_lb": 12608013,
+    "best_ub": 12650520,
+    "gap": 0.34,
+    "duties": 229,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s17_t2366",
+   "stations": 17,
+   "tasks": 2366,
+   "group": "Large",
+   "single": {
+    "root_lb": 13478416,
+    "best_lb": 13483797,
+    "best_ub": 13620840,
+    "gap": 1.01,
+    "duties": 234,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 11891063,
+    "best_lb": 11892482,
+    "best_ub": 11931600,
+    "gap": 0.33,
+    "duties": 218,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s18_t2395",
+   "stations": 18,
+   "tasks": 2395,
+   "group": "Large",
+   "single": {
+    "root_lb": 15425380,
+    "best_lb": 15429645,
+    "best_ub": 15542940,
+    "gap": 0.73,
+    "duties": 263,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 13764435,
+    "best_lb": 13765215,
+    "best_ub": 13799940,
+    "gap": 0.25,
+    "duties": 249,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s18_t2550",
+   "stations": 18,
+   "tasks": 2550,
+   "group": "Large",
+   "single": {
+    "root_lb": 14939689,
+    "best_lb": 14944106,
+    "best_ub": 15041760,
+    "gap": 0.65,
+    "duties": 257,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 13480955,
+    "best_lb": 13481910,
+    "best_ub": 13541220,
+    "gap": 0.44,
+    "duties": 243,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s18_t2595",
+   "stations": 18,
+   "tasks": 2595,
+   "group": "Large",
+   "single": {
+    "root_lb": 13723693,
+    "best_lb": 13728804,
+    "best_ub": 13837860,
+    "gap": 0.79,
+    "duties": 234,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 12149343,
+    "best_lb": 12150418,
+    "best_ub": 12199080,
+    "gap": 0.4,
+    "duties": 223,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s18_t2641",
+   "stations": 18,
+   "tasks": 2641,
+   "group": "Large",
+   "single": {
+    "root_lb": 15474385,
+    "best_lb": 15478417,
+    "best_ub": 15627720,
+    "gap": 0.96,
+    "duties": 265,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 13458876,
+    "best_lb": 13459831,
+    "best_ub": 13528980,
+    "gap": 0.51,
+    "duties": 237,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s18_t2648",
+   "stations": 18,
+   "tasks": 2648,
+   "group": "Large",
+   "single": {
+    "root_lb": 13801297,
+    "best_lb": 13806594,
+    "best_ub": 13921500,
+    "gap": 0.83,
+    "duties": 234,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 12094401,
+    "best_lb": 12095027,
+    "best_ub": 12150300,
+    "gap": 0.45,
+    "duties": 218,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s19_t2315",
+   "stations": 19,
+   "tasks": 2315,
+   "group": "Large",
+   "single": {
+    "root_lb": 14810475,
+    "best_lb": 14817684,
+    "best_ub": 14958960,
+    "gap": 0.94,
+    "duties": 253,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 12585061,
+    "best_lb": 12586784,
+    "best_ub": 12633420,
+    "gap": 0.37,
+    "duties": 225,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s19_t2484",
+   "stations": 19,
+   "tasks": 2484,
+   "group": "Large",
+   "single": {
+    "root_lb": 15219679,
+    "best_lb": 15225464,
+    "best_ub": 15369840,
+    "gap": 0.94,
+    "duties": 261,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 12461767,
+    "best_lb": 12463222,
+    "best_ub": 12537360,
+    "gap": 0.59,
+    "duties": 226,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s19_t2661",
+   "stations": 19,
+   "tasks": 2661,
+   "group": "Large",
+   "single": {
+    "root_lb": 18565600,
+    "best_lb": 18571086,
+    "best_ub": 18741660,
+    "gap": 0.91,
+    "duties": 317,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 14820822,
+    "best_lb": 14821928,
+    "best_ub": 14882040,
+    "gap": 0.4,
+    "duties": 269,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s19_t2702",
+   "stations": 19,
+   "tasks": 2702,
+   "group": "Large",
+   "single": {
+    "root_lb": 14331231,
+    "best_lb": 14335649,
+    "best_ub": 14423520,
+    "gap": 0.61,
+    "duties": 247,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 12840737,
+    "best_lb": 12840737,
+    "best_ub": 12911940,
+    "gap": 0.55,
+    "duties": 233,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s19_t2711",
+   "stations": 19,
+   "tasks": 2711,
+   "group": "Large",
+   "single": {
+    "root_lb": 15915564,
+    "best_lb": 15919393,
+    "best_ub": 15988620,
+    "gap": 0.43,
+    "duties": 270,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 14476229,
+    "best_lb": 14477151,
+    "best_ub": 14533020,
+    "gap": 0.38,
+    "duties": 258,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s19_t2744",
+   "stations": 19,
+   "tasks": 2744,
+   "group": "Large",
+   "single": {
+    "root_lb": 15100876,
+    "best_lb": 15104590,
+    "best_ub": 15214140,
+    "gap": 0.72,
+    "duties": 259,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 13331065,
+    "best_lb": 13331810,
+    "best_ub": 13382700,
+    "gap": 0.38,
+    "duties": 243,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s20_t2668",
+   "stations": 20,
+   "tasks": 2668,
+   "group": "Large",
+   "single": {
+    "root_lb": 15799233,
+    "best_lb": 15802963,
+    "best_ub": 15861120,
+    "gap": 0.37,
+    "duties": 274,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 13605974,
+    "best_lb": 13606853,
+    "best_ub": 13665660,
+    "gap": 0.43,
+    "duties": 253,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s20_t2921",
+   "stations": 20,
+   "tasks": 2921,
+   "group": "Large",
+   "single": {
+    "root_lb": 18007663,
+    "best_lb": 18011628,
+    "best_ub": 18133260,
+    "gap": 0.67,
+    "duties": 310,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 15992132,
+    "best_lb": 15993143,
+    "best_ub": 16076100,
+    "gap": 0.52,
+    "duties": 291,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  },
+  {
+   "name": "s20_t3016",
+   "stations": 20,
+   "tasks": 3016,
+   "group": "Large",
+   "single": {
+    "root_lb": 16181075,
+    "best_lb": 16184454,
+    "best_ub": 16287780,
+    "gap": 0.63,
+    "duties": 277,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   },
+   "multi": {
+    "root_lb": 14703742,
+    "best_lb": 14704066,
+    "best_ub": 14756220,
+    "gap": 0.35,
+    "duties": 265,
+    "holder": {
+     "name": "B.T.C. van Rossum",
+     "github": "BartvanRossum",
+     "method": "Branch and price (paper experiments)",
+     "reference": "https://arxiv.org/abs/2606.10081"
+    },
+    "date": null,
+    "issue": null
+   }
+  }
+ ],
+ "history": [],
+ "updated": "2026-11-03T11:42:51Z"
+}

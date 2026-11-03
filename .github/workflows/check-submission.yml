@@ -1,0 +1,114 @@
+name: Check submitted solution
+
+# Runs when someone opens (or edits) an issue created with the "Submit a solution" form.
+# The submitted file is checked with checker.jar; if it is feasible and strictly cheaper than
+# the best known upper bound, it is committed and the leaderboard is updated.
+
+on:
+  issues:
+    types: [opened, edited, reopened]
+
+permissions:
+  contents: write
+  issues: write
+  pages: write
+
+jobs:
+  check:
+    if: >-
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.body, '### Instance') &&
+      contains(github.event.issue.body, '### Variant') &&
+      contains(github.event.issue.body, '### Solution file')
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "21"
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Make sure the labels exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh label create submission    --color 1D76DB --description "Solution submitted through the form" 2>/dev/null || true
+          gh label create new-best      --color 0E8A16 --description "Accepted: new best known solution"   2>/dev/null || true
+          gh label create not-improving --color FBCA04 --description "Feasible but not better"              2>/dev/null || true
+          gh label create infeasible    --color D93F0B --description "Rejected by the checker"              2>/dev/null || true
+          gh label create rejected      --color B60205 --description "Submission could not be processed"    2>/dev/null || true
+          gh label create needs-review  --color 5319E7 --description "Needs a maintainer's attention"        2>/dev/null || true
+
+      - name: Check the solution and update the leaderboard
+        env:
+          # Untrusted input is passed through the environment, never interpolated into the script.
+          ISSUE_BODY: ${{ github.event.issue.body }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          GITHUB_TOKEN: ${{ github.token }}
+          BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898333+github-actions[bot]@users.noreply.github.com"
+          # Retry in case another submission was merged while this one was being checked.
+          for attempt in 1 2 3 4 5; do
+            git fetch --quiet origin "$BRANCH"
+            git reset --quiet --hard "origin/$BRANCH"
+            python scripts/leaderboard.py process --out "$RUNNER_TEMP/result.json"
+            status=$(jq -r .status "$RUNNER_TEMP/result.json")
+            if [ "$status" != "accepted" ]; then break; fi
+            git add solutions_dashboard docs/data/leaderboard.json
+            git commit --quiet -m "$(jq -r .commit_message "$RUNNER_TEMP/result.json")"
+            if git push --quiet origin "HEAD:$BRANCH"; then break; fi
+            echo "Push failed (attempt $attempt), retrying against the latest leaderboard"
+            if [ "$attempt" = 5 ]; then
+              jq '.status="review" | .labels=["submission","needs-review"] | .comment="The solution could not be saved because the repository kept changing. A maintainer will take a look."' \
+                "$RUNNER_TEMP/result.json" > "$RUNNER_TEMP/r2.json" && mv "$RUNNER_TEMP/r2.json" "$RUNNER_TEMP/result.json"
+            fi
+            sleep $((attempt * 5))
+          done
+
+      - name: Rebuild the dashboard
+        # Pushes made with the workflow token do not start a Pages build by themselves.
+        if: success()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ "$(jq -r .status "$RUNNER_TEMP/result.json")" = "accepted" ]; then
+            gh api -X POST "repos/$GITHUB_REPOSITORY/pages/builds" >/dev/null 2>&1 || echo "Pages build not triggered (Pages may be off)"
+          fi
+
+      - name: Report the result on the issue
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+        run: |
+          result="$RUNNER_TEMP/result.json"
+          if [ ! -f "$result" ]; then
+            gh issue comment "$ISSUE_NUMBER" --body "Something went wrong while checking this submission. A maintainer will take a look."
+            gh issue edit "$ISSUE_NUMBER" --add-label needs-review
+            exit 0
+          fi
+          jq -r .comment "$result" > "$RUNNER_TEMP/comment.md"
+          gh issue comment "$ISSUE_NUMBER" --body-file "$RUNNER_TEMP/comment.md"
+          for l in new-best not-improving infeasible rejected needs-review; do
+            gh issue edit "$ISSUE_NUMBER" --remove-label "$l" >/dev/null 2>&1 || true
+          done
+          gh issue edit "$ISSUE_NUMBER" --add-label "$(jq -r '.labels | join(",")' "$result")"
+          inst=$(jq -r '.instance // empty' "$result")
+          variant=$(jq -r '.variant // empty' "$result")
+          if [ -n "$inst" ]; then
+            gh issue edit "$ISSUE_NUMBER" --title "[Submission] $inst ($variant-depot)"
+          fi
+          case "$(jq -r .status "$result")" in
+            accepted)   gh issue close "$ISSUE_NUMBER" --reason completed ;;
+            not-better) gh issue close "$ISSUE_NUMBER" --reason "not planned" ;;
+            # rejected submissions stay open so the author can edit and resubmit
+          esac

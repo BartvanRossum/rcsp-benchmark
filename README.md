@@ -49,15 +49,20 @@ instances/
         crewbases_multi_depot.txt
         tracks.txt
         geoStations.txt
-solutions/
+solutions/                  best known solutions from the paper
     single_depot/
         solution_single_depot_s{S}_t{T}.txt
     multi_depot/
         solution_multi_depot_s{S}_t{T}.txt
+solutions_dashboard/        current best known solutions, updated by submissions
+    single_depot/
+    multi_depot/
 checker.jar
+docs/                       leaderboard page (GitHub Pages)
+scripts/leaderboard.py      checks submissions and updates the leaderboard
 ```
 
-See [`instances/README.md`](instances/README.md) for a description of the instance files, and [`solutions/README.md`](solutions/README.md) for a description of the solution files.
+See [`instances/README.md`](instances/README.md) for a description of the instance files, and [`solutions/README.md`](solutions/README.md) for a description of the solution files and the results from the paper.
 
 ## Generation
 
@@ -67,7 +72,7 @@ Details are given in the accompanying paper.
 
 ## Feasibility Checker
 
-A standalone feasibility checker is provided as [`checker.jar`](checker.jar). It verifies whether a solution satisfies all constraints and reports the total cost. **Requirements:** Java 11 or higher.
+A standalone feasibility checker is provided as [`checker.jar`](checker.jar). It verifies whether a solution satisfies all constraints and reports the total cost. **Requirements:** Java 21 or higher.
 
 Run it as follows, where the arguments are the instance folder, the solution file, and the variant (`single` or `multi`):
 
@@ -84,6 +89,14 @@ The checker verifies the following constraints:
 - All tasks are covered by at least one duty
 
 It prints a per-duty feasibility report to stdout followed by the total solution cost.
+
+## Leaderboard and Submitting Solutions
+
+A live leaderboard of best known solutions is available at **https://bartvanrossum.github.io/rcsp-benchmark/**.
+
+Found a cheaper solution? Click **Submit a solution** on the leaderboard, or **Improve** next to an instance. Fill in the instance, variant and (optionally) how you'd like to be credited, then continue to GitHub, where the [submission form](https://github.com/BartvanRossum/rcsp-benchmark/issues/new?template=submit-solution.yml) opens pre-filled. Drop in your solution file (in the format of [`solutions/README.md`](solutions/README.md)) and create the issue. A GitHub account is required.
+
+A GitHub Action runs `checker.jar` on the submission and replies on the issue within a few minutes. If the solution is feasible and strictly cheaper than the current best known upper bound, it is stored in [`solutions_dashboard/`](solutions_dashboard), the leaderboard is updated, and you are credited as the record holder. Ties keep the earlier record. Lower bounds are those reported in the paper and are not updated through submissions. The solutions from the paper itself remain unchanged in [`solutions/`](solutions).
 
 ## Citation
 
