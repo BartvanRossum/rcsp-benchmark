@@ -986,9 +986,9 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s15_t1749</code></td>
 <td align="right">9,308,113</td>
 <td align="right">9,312,168</td>
-<td align="right">9,355,260</td>
-<td align="right">0.46</td>
-<td align="right">162</td>
+<td align="right">9,346,560</td>
+<td align="right">0.37</td>
+<td align="right">161</td>
 <td align="right">8,622,494</td>
 <td align="right">8,624,236</td>
 <td align="right">8,653,620</td>
