@@ -1090,8 +1090,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s17_t2166</code></td>
 <td align="right">14,037,157</td>
 <td align="right">14,044,780</td>
-<td align="right">14,128,740</td>
-<td align="right">0.59</td>
+<td align="right">14,117,820</td>
+<td align="right">0.52</td>
 <td align="right">238</td>
 <td align="right">11,642,240</td>
 <td align="right">11,643,649</td>
