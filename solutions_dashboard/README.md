@@ -1077,8 +1077,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s17_t2090</code></td>
 <td align="right">12,436,106</td>
 <td align="right">12,441,737</td>
-<td align="right">12,525,420</td>
-<td align="right">0.67</td>
+<td align="right">12,516,000</td>
+<td align="right">0.59</td>
 <td align="right">212</td>
 <td align="right">10,852,090</td>
 <td align="right">10,853,424</td>
