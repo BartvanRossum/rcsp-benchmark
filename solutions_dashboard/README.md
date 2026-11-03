@@ -479,8 +479,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s7_t681</code></td>
 <td align="right">3,315,261</td>
 <td align="right">3,333,440</td>
-<td align="right">3,352,260</td>
-<td align="right">0.56</td>
+<td align="right">3,352,020</td>
+<td align="right">0.55</td>
 <td align="right">58</td>
 <td align="right">3,084,196</td>
 <td align="right">3,087,013</td>
