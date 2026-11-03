@@ -713,8 +713,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s10_t1016</code></td>
 <td align="right">5,722,362</td>
 <td align="right">5,729,371</td>
-<td align="right">5,770,740</td>
-<td align="right">0.72</td>
+<td align="right">5,765,940</td>
+<td align="right">0.63</td>
 <td align="right">101</td>
 <td align="right">5,345,895</td>
 <td align="right">5,348,589</td>
