@@ -1064,8 +1064,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s16_t2252</code></td>
 <td align="right">12,396,038</td>
 <td align="right">12,400,856</td>
-<td align="right">12,535,440</td>
-<td align="right">1.07</td>
+<td align="right">12,520,980</td>
+<td align="right">0.96</td>
 <td align="right">214</td>
 <td align="right">11,064,280</td>
 <td align="right">11,065,751</td>
