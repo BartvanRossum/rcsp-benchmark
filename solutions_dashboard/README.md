@@ -648,8 +648,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s9_t991</code></td>
 <td align="right">4,801,999</td>
 <td align="right">4,809,359</td>
-<td align="right">4,831,620</td>
-<td align="right">0.46</td>
+<td align="right">4,828,560</td>
+<td align="right">0.40</td>
 <td align="right">82</td>
 <td align="right">4,480,773</td>
 <td align="right">4,484,429</td>
