@@ -1082,7 +1082,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">212</td>
 <td align="right">10,852,090</td>
 <td align="right">10,853,424</td>
-<td align="right">10,891,680</td>
+<td align="right">10,891,620</td>
 <td align="right">0.35</td>
 <td align="right">197</td>
 </tr>
