@@ -947,8 +947,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s14_t1755</code></td>
 <td align="right">10,283,388</td>
 <td align="right">10,289,863</td>
-<td align="right">10,356,000</td>
-<td align="right">0.64</td>
+<td align="right">10,345,680</td>
+<td align="right">0.54</td>
 <td align="right">176</td>
 <td align="right">9,408,259</td>
 <td align="right">9,409,947</td>
