@@ -713,9 +713,9 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s10_t1016</code></td>
 <td align="right">5,722,362</td>
 <td align="right">5,729,371</td>
-<td align="right">5,765,940</td>
-<td align="right">0.63</td>
-<td align="right">101</td>
+<td align="right">5,747,460</td>
+<td align="right">0.31</td>
+<td align="right">100</td>
 <td align="right">5,345,895</td>
 <td align="right">5,348,589</td>
 <td align="right">5,365,800</td>
