@@ -830,8 +830,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s13_t1286</code></td>
 <td align="right">8,070,378</td>
 <td align="right">8,079,261</td>
-<td align="right">8,155,980</td>
-<td align="right">0.94</td>
+<td align="right">8,147,340</td>
+<td align="right">0.84</td>
 <td align="right">140</td>
 <td align="right">7,056,461</td>
 <td align="right">7,058,781</td>
