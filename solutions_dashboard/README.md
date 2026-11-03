@@ -609,8 +609,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s9_t784</code></td>
 <td align="right">4,266,799</td>
 <td align="right">4,275,539</td>
-<td align="right">4,284,180</td>
-<td align="right">0.20</td>
+<td align="right">4,282,380</td>
+<td align="right">0.16</td>
 <td align="right">75</td>
 <td align="right">3,982,069</td>
 <td align="right">3,986,176</td>
