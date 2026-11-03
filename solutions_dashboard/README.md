@@ -778,8 +778,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s12_t1049</code></td>
 <td align="right">6,878,240</td>
 <td align="right">6,889,604</td>
-<td align="right">6,952,620</td>
-<td align="right">0.91</td>
+<td align="right">6,949,080</td>
+<td align="right">0.86</td>
 <td align="right">119</td>
 <td align="right">5,718,836</td>
 <td align="right">5,722,722</td>
