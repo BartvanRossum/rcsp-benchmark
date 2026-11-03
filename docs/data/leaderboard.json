@@ -1457,17 +1457,15 @@
    "single": {
     "root_lb": 5253048,
     "best_lb": 5265660,
-    "best_ub": 5323500,
-    "gap": 1.09,
+    "best_ub": 5312340,
+    "gap": 0.88,
     "duties": 92,
     "holder": {
-     "name": "B.T.C. van Rossum",
-     "github": "BartvanRossum",
-     "method": "Branch and price (paper experiments)",
-     "reference": "https://arxiv.org/abs/2606.10081"
+     "name": "Bart",
+     "github": "BartvanRossum"
     },
-    "date": null,
-    "issue": null
+    "date": "2026-11-03T14:23:45Z",
+    "issue": 62
    },
    "multi": {
     "root_lb": 4904474,
@@ -3488,6 +3486,20 @@
  ],
  "history": [
   {
+   "instance": "s8_t872",
+   "variant": "single",
+   "previous_ub": 5323500,
+   "new_ub": 5312340,
+   "best_lb": 5265660,
+   "duties": 92,
+   "holder": {
+    "name": "Bart",
+    "github": "BartvanRossum"
+   },
+   "date": "2026-11-03T14:23:45Z",
+   "issue": 62
+  },
+  {
    "instance": "s8_t734",
    "variant": "single",
    "previous_ub": 3825540,
@@ -4328,5 +4340,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-03T14:23:35Z"
+ "updated": "2026-11-03T14:23:45Z"
 }
