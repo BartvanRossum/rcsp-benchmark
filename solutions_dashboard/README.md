@@ -765,8 +765,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s11_t1204</code></td>
 <td align="right">6,532,036</td>
 <td align="right">6,540,270</td>
-<td align="right">6,582,900</td>
-<td align="right">0.65</td>
+<td align="right">6,578,640</td>
+<td align="right">0.58</td>
 <td align="right">114</td>
 <td align="right">6,106,999</td>
 <td align="right">6,109,832</td>
