@@ -1469,15 +1469,18 @@
    "single": {
     "root_lb": 5253048,
     "best_lb": 5265660,
-    "best_ub": 5312340,
-    "gap": 0.88,
-    "duties": 92,
+    "best_ub": 5282520,
+    "gap": 0.32,
+    "duties": 91,
     "holder": {
-     "name": "Bart",
-     "github": "BartvanRossum"
+     "name": "Casper",
+     "github": "CasperBazelmans",
+     "affiliation": "Eindhoven University of Technology",
+     "method": "Restricted Master Heuristic",
+     "reference": "https://github.com/CasperBazelmans/CoolPool"
     },
-    "date": "2026-11-03T14:23:45Z",
-    "issue": 62
+    "date": "2026-11-03T15:03:20Z",
+    "issue": 97
    },
    "multi": {
     "root_lb": 4904474,
@@ -3446,6 +3449,23 @@
  ],
  "history": [
   {
+   "instance": "s8_t872",
+   "variant": "single",
+   "previous_ub": 5312340,
+   "new_ub": 5282520,
+   "best_lb": 5265660,
+   "duties": 91,
+   "holder": {
+    "name": "Casper",
+    "github": "CasperBazelmans",
+    "affiliation": "Eindhoven University of Technology",
+    "method": "Restricted Master Heuristic",
+    "reference": "https://github.com/CasperBazelmans/CoolPool"
+   },
+   "date": "2026-11-03T15:03:20Z",
+   "issue": 97
+  },
+  {
    "instance": "s10_t1016",
    "variant": "single",
    "previous_ub": 5765940,
@@ -4808,5 +4828,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-03T15:03:15Z"
+ "updated": "2026-11-03T15:03:20Z"
 }
