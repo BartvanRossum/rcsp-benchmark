@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RCSP Leaderboard</title>
+<meta name="description" content="Live best known solutions for the Railway Crew Scheduling Problem benchmark.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f7f6f2; --surface: #ffffff; --ink: #1d2126; --muted: #646b73; --faint: #8a9098;
+  --line: #e3e1da; --line-strong: #cfccc3; --accent: #1f5f8b; --accent-ink: #ffffff;
+  --accent-soft: #e6eff6; --good: #2d7a4f; --good-soft: #e3f1e8; --bar: #c8d7e3; --bar-hi: #1f5f8b;
+  --new: #b4561f; --new-soft: #fbece2; --row-hover: #f2f1ec;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #14171a; --surface: #1b1f23; --ink: #e6e8ea; --muted: #9aa3ab; --faint: #737c85;
+    --line: #2a2f35; --line-strong: #3a4148; --accent: #6fb0dd; --accent-ink: #0d1a24;
+    --accent-soft: #1d2d3a; --good: #6cc495; --good-soft: #1b3226; --bar: #2b3d4b; --bar-hi: #6fb0dd;
+    --new: #eb9a64; --new-soft: #3a2619; --row-hover: #20252a;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #14171a; --surface: #1b1f23; --ink: #e6e8ea; --muted: #9aa3ab; --faint: #737c85;
+  --line: #2a2f35; --line-strong: #3a4148; --accent: #6fb0dd; --accent-ink: #0d1a24;
+  --accent-soft: #1d2d3a; --good: #6cc495; --good-soft: #1b3226; --bar: #2b3d4b; --bar-hi: #6fb0dd;
+  --new: #eb9a64; --new-soft: #3a2619; --row-hover: #20252a;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.5 "IBM Plex Sans", system-ui, sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.wrap { max-width: 1180px; margin: 0 auto; padding: 32px 24px 48px; }
+.num, .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-variant-numeric: tabular-nums; }
+
+header { display: flex; flex-wrap: wrap; gap: 20px 32px; align-items: flex-end; justify-content: space-between;
+  padding-bottom: 24px; border-bottom: 1px solid var(--line-strong); }
+.eyebrow { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+h1 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: clamp(26px, 4vw, 36px); line-height: 1.15; margin: 0; }
+.sub { color: var(--muted); margin: 8px 0 0; max-width: 62ch; }
+.head-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 9px 16px; border-radius: 6px; font-weight: 500;
+  border: 1px solid var(--line-strong); color: var(--ink); background: var(--surface); font-size: 14px; }
+.btn:hover { text-decoration: none; border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--accent-ink); }
+.btn svg { width: 16px; height: 16px; }
+
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line);
+  border-radius: 8px; overflow: hidden; margin: 28px 0; }
+.stat { background: var(--surface); padding: 16px 18px; }
+.stat .label { font-size: 12.5px; color: var(--muted); }
+.stat .value { font-size: 26px; font-weight: 500; margin-top: 2px; }
+.stat .value small { font-size: 14px; color: var(--muted); font-weight: 400; }
+
+.controls { display: flex; flex-wrap: wrap; gap: 12px 16px; align-items: center; margin-bottom: 14px; }
+.seg { display: inline-flex; border: 1px solid var(--line-strong); border-radius: 6px; overflow: hidden; background: var(--surface); }
+.seg button { font: inherit; font-size: 14px; border: 0; background: transparent; color: var(--muted); padding: 7px 14px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--line-strong); }
+.seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--ink); font-weight: 500; }
+.search { flex: 1 1 180px; max-width: 260px; margin-left: auto; font: inherit; font-size: 14px; padding: 7px 12px;
+  border: 1px solid var(--line-strong); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.search:focus, .seg button:focus-visible, th button:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+
+.table-card { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; font-weight: 500; font-size: 12.5px; color: var(--muted); padding: 0; border-bottom: 1px solid var(--line-strong);
+  position: sticky; top: 0; background: var(--surface); white-space: nowrap; }
+th button { font: inherit; color: inherit; background: none; border: 0; padding: 11px 12px; cursor: pointer; width: 100%; text-align: inherit; }
+th.r, td.r { text-align: right; }
+th[aria-sort] button::after { content: ""; display: inline-block; width: 0; height: 0; margin-left: 6px; vertical-align: middle;
+  border-left: 4px solid transparent; border-right: 4px solid transparent; }
+th[aria-sort="ascending"] button::after { border-bottom: 5px solid currentColor; }
+th[aria-sort="descending"] button::after { border-top: 5px solid currentColor; }
+td { padding: 9px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr:hover { background: var(--row-hover); }
+.inst { font-weight: 500; }
+.grp { font-size: 11.5px; color: var(--faint); margin-left: 6px; }
+.gapcell { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+.gapbar { width: 64px; height: 6px; background: var(--line); border-radius: 3px; overflow: hidden; }
+.gapbar i { display: block; height: 100%; background: var(--bar-hi); border-radius: 3px; }
+.badge { display: inline-block; font-size: 11.5px; font-weight: 500; padding: 1px 8px; border-radius: 999px; }
+.badge.opt { background: var(--good-soft); color: var(--good); }
+.badge.new { background: var(--new-soft); color: var(--new); margin-left: 6px; }
+.holder { max-width: 220px; overflow: hidden; text-overflow: ellipsis; }
+.holder .paper { color: var(--muted); }
+.muted { color: var(--muted); }
+.acts { display: flex; gap: 12px; justify-content: flex-end; font-size: 13px; }
+.empty { padding: 32px; text-align: center; color: var(--muted); }
+
+.lower { display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; margin-top: 36px; }
+h2 { font-family: "Source Serif 4", Georgia, serif; font-weight: 600; font-size: 20px; margin: 0 0 12px; }
+.feed { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.feed li { padding: 12px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 1fr auto; gap: 2px 16px; }
+.feed .what { font-weight: 500; }
+.feed .meta { color: var(--muted); font-size: 13px; grid-column: 1 / -1; }
+.feed .delta { color: var(--good); font-size: 13.5px; }
+.how ol { margin: 0; padding-left: 20px; color: var(--ink); }
+.how li { margin-bottom: 8px; }
+.how p { color: var(--muted); font-size: 13.5px; }
+code { font-family: "IBM Plex Mono", monospace; font-size: 12.5px; background: var(--accent-soft); padding: 1px 5px; border-radius: 4px; }
+footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px;
+  display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
+.notice { padding: 14px 16px; border: 1px solid var(--line-strong); border-radius: 8px; background: var(--surface); color: var(--muted); }
+
+/* submission panel */
+dialog#sub { border: 0; padding: 0; width: min(560px, calc(100vw - 32px)); max-height: calc(100vh - 48px); border-radius: 12px;
+  background: var(--surface); color: var(--ink); box-shadow: 0 20px 60px rgba(0,0,0,.25); }
+dialog#sub::backdrop { background: rgba(20,23,26,.45); }
+.sub-head { padding: 22px 24px 4px; display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; }
+.sub-head h2 { margin: 0; }
+.sub-head p { margin: 4px 0 0; color: var(--muted); font-size: 13.5px; }
+.x { border: 0; background: none; color: var(--muted); font-size: 22px; line-height: 1; cursor: pointer; padding: 2px 6px; border-radius: 6px; }
+.x:hover { background: var(--row-hover); color: var(--ink); }
+.sub-body { padding: 12px 24px 8px; overflow-y: auto; }
+.step { display: grid; grid-template-columns: 26px 1fr; gap: 0 12px; padding: 12px 0; }
+.step + .step { border-top: 1px solid var(--line); }
+.step .n { width: 24px; height: 24px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); font-size: 12.5px;
+  font-weight: 600; display: grid; place-items: center; margin-top: 1px; }
+.step h3 { font-size: 14.5px; font-weight: 600; margin: 2px 0 10px; }
+.field { display: flex; flex-direction: column; gap: 4px; margin-bottom: 10px; }
+.field label { font-size: 12.5px; color: var(--muted); }
+.field input, .field select { font: inherit; font-size: 14px; padding: 8px 10px; border: 1px solid var(--line-strong); border-radius: 6px;
+  background: var(--bg); color: var(--ink); width: 100%; }
+.field input:focus, .field select:focus { outline: 2px solid var(--accent); outline-offset: 0; border-color: var(--accent); }
+.row2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 12px; }
+.target { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line);
+  border-radius: 8px; overflow: hidden; margin-top: 4px; }
+.target div { background: var(--bg); padding: 9px 12px; }
+.target .label { font-size: 11.5px; color: var(--muted); }
+.target .value { font-size: 15px; font-weight: 500; }
+.target-note { font-size: 12.5px; color: var(--muted); margin: 8px 0 0; }
+.target-note.opt { color: var(--good); }
+.step p.hint { font-size: 13px; color: var(--muted); margin: 0; }
+.sub-foot { padding: 14px 24px 20px; display: flex; justify-content: flex-end; gap: 10px; border-top: 1px solid var(--line); }
+.btn[aria-disabled="true"] { opacity: .5; pointer-events: none; }
+@media (max-width: 560px) { .row2 { grid-template-columns: 1fr; } .sub-head, .sub-body, .sub-foot { padding-left: 16px; padding-right: 16px; } }
+
+@media (max-width: 860px) {
+  .stats { grid-template-columns: repeat(2, 1fr); }
+  .lower { grid-template-columns: 1fr; }
+  .search { margin-left: 0; max-width: none; }
+}
+@media (max-width: 560px) {
+  .wrap { padding: 20px 16px 32px; }
+  .col-opt, .grp { display: none; }
+  .stat .value { font-size: 22px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <p class="eyebrow">Railway Crew Scheduling Problem · benchmark</p>
+      <h1>Best known solutions</h1>
+      <p class="sub">Every upper bound below comes from a solution file verified with the benchmark's feasibility checker. Lower bounds are from the accompanying paper. Submit a cheaper solution and the table updates automatically.</p>
+    </div>
+    <div class="head-actions">
+      <a class="btn" id="repoLink" href="https://github.com/BartvanRossum/rcsp-benchmark">
+        <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        Repository
+      </a>
+      <a class="btn primary" id="submitLink" data-submit href="https://github.com/BartvanRossum/rcsp-benchmark/issues/new?template=submit-solution.yml">
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M8 11V2.5M4.5 6 8 2.5 11.5 6M2.5 10.5v3h11v-3"/></svg>
+        Submit a solution
+      </a>
+    </div>
+  </header>
+
+  <section class="stats" aria-label="Summary">
+    <div class="stat"><div class="label">Proven optimal</div><div class="value num" id="sOpt">–</div></div>
+    <div class="stat"><div class="label">Mean gap</div><div class="value num" id="sGap">–</div></div>
+    <div class="stat"><div class="label">Improved by the community</div><div class="value num" id="sImp">–</div></div>
+    <div class="stat"><div class="label">Last improvement</div><div class="value" id="sLast" style="font-size:18px;padding-top:6px">–</div></div>
+  </section>
+
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Variant" id="variantSeg">
+      <button type="button" data-v="single" aria-pressed="true">Single-depot</button>
+      <button type="button" data-v="multi" aria-pressed="false">Multi-depot</button>
+    </div>
+    <div class="seg" role="group" aria-label="Size group" id="groupSeg">
+      <button type="button" data-g="" aria-pressed="true">All</button>
+      <button type="button" data-g="Tiny" aria-pressed="false">Tiny</button>
+      <button type="button" data-g="Small" aria-pressed="false">Small</button>
+      <button type="button" data-g="Medium" aria-pressed="false">Medium</button>
+      <button type="button" data-g="Large" aria-pressed="false">Large</button>
+    </div>
+    <input class="search" id="search" type="search" placeholder="Filter instances, e.g. s6_t" aria-label="Filter instances">
+  </div>
+
+  <div class="table-card">
+    <table>
+      <thead><tr id="headRow">
+        <th data-k="name"><button>Instance</button></th>
+        <th data-k="tasks" class="r col-opt"><button>Tasks</button></th>
+        <th data-k="best_ub" class="r"><button>Best UB</button></th>
+        <th data-k="best_lb" class="r col-opt"><button>Best LB</button></th>
+        <th data-k="gap" class="r"><button>Gap</button></th>
+        <th data-k="duties" class="r col-opt"><button>Duties</button></th>
+        <th data-k="holder" class="col-opt"><button>Found by</button></th>
+        <th data-k="date" class="col-opt"><button>Since</button></th>
+        <th class="r"><span style="display:block;padding:11px 12px">Solution</span></th>
+      </tr></thead>
+      <tbody id="rows"><tr><td colspan="9" class="empty">Loading the leaderboard…</td></tr></tbody>
+    </table>
+  </div>
+
+  <div class="lower">
+    <section>
+      <h2>Recent improvements</h2>
+      <ul class="feed" id="feed"></ul>
+    </section>
+    <section class="how">
+      <h2>How to submit</h2>
+      <ol>
+        <li>Click <a id="submitLink2" data-submit href="https://github.com/BartvanRossum/rcsp-benchmark/issues/new?template=submit-solution.yml">Submit a solution</a>, or <em>Improve</em> next to an instance, and fill in the details.</li>
+        <li>Continue to GitHub (an account is needed) and drop your solution <code>.txt</code> into the pre-filled form.</li>
+        <li>The checker runs within minutes. If the solution is feasible and strictly cheaper than the current best, it is added here and credited to you.</li>
+      </ol>
+      <p>The file format is described in <a id="fmtLink" href="https://github.com/BartvanRossum/rcsp-benchmark/blob/main/solutions/README.md">solutions/README.md</a>. Ties keep the earlier record.</p>
+    </section>
+  </div>
+
+  <footer>
+    <span>Instances and checker: B.T.C. van Rossum (2026), <a href="https://arxiv.org/abs/2606.10081">arXiv:2606.10081</a>.</span>
+    <span id="updated"></span>
+  </footer>
+</div>
+
+<dialog id="sub" aria-labelledby="subTitle">
+  <form method="dialog" id="subForm">
+    <div class="sub-head">
+      <div>
+        <h2 id="subTitle">Submit a solution</h2>
+        <p>The checker verifies every submission. Strictly cheaper feasible solutions become the new best known solution.</p>
+      </div>
+      <button class="x" value="cancel" aria-label="Close">×</button>
+    </div>
+    <div class="sub-body">
+      <div class="step">
+        <span class="n">1</span>
+        <div>
+          <h3>Instance</h3>
+          <div class="row2">
+            <div class="field"><label for="fInst">Instance</label><select id="fInst"></select></div>
+            <div class="field"><label for="fVar">Variant</label>
+              <select id="fVar"><option value="single">Single-depot</option><option value="multi">Multi-depot</option></select></div>
+          </div>
+          <div class="target">
+            <div><div class="label">Best known</div><div class="value num" id="tUb">–</div></div>
+            <div><div class="label">Lower bound</div><div class="value num" id="tLb">–</div></div>
+            <div><div class="label">Gap</div><div class="value num" id="tGap">–</div></div>
+          </div>
+          <p class="target-note" id="tNote"></p>
+        </div>
+      </div>
+      <div class="step">
+        <span class="n">2</span>
+        <div>
+          <h3>Credit <span class="muted" style="font-weight:400;font-size:13px">· optional, remembered on this device</span></h3>
+          <div class="row2">
+            <div class="field"><label for="fName">Name</label><input id="fName" autocomplete="name" placeholder="Defaults to your GitHub username"></div>
+            <div class="field"><label for="fAff">Affiliation</label><input id="fAff" autocomplete="organization"></div>
+          </div>
+          <div class="field"><label for="fMethod">Method</label><input id="fMethod" placeholder="e.g. Adaptive large neighbourhood search"></div>
+          <div class="field"><label for="fRef">Reference</label><input id="fRef" type="url" placeholder="https:// link to a paper, preprint or code"></div>
+        </div>
+      </div>
+      <div class="step">
+        <span class="n">3</span>
+        <div>
+          <h3>Attach the file on GitHub</h3>
+          <p class="hint">GitHub opens in a new tab with everything above filled in. Drag your solution <code>.txt</code> into the <em>Solution file</em> box and click <em>Create</em>. The result is posted on the issue within a few minutes. You need a GitHub account.</p>
+        </div>
+      </div>
+    </div>
+    <div class="sub-foot">
+      <button class="btn" value="cancel">Cancel</button>
+      <a class="btn primary" id="goGithub" href="#" target="_blank" rel="noopener">Continue on GitHub
+        <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M6 3h7v7M13 3 4 12"/></svg></a>
+    </div>
+  </form>
+</dialog>
+
+<script>
+(function () {
+  "use strict";
+  var REPO = "BartvanRossum/rcsp-benchmark", BRANCH = "main";
+  // When served from GitHub Pages (owner.github.io/repo/), use that repository.
+  var gh = location.hostname.match(/^([^.]+)\.github\.io$/), seg = location.pathname.split("/").filter(Boolean)[0];
+  if (gh && seg) REPO = gh[1] + "/" + seg;
+  var SOURCES = [
+    "https://raw.githubusercontent.com/" + REPO + "/" + BRANCH + "/docs/data/leaderboard.json",
+    "data/leaderboard.json"
+  ];
+  var state = { variant: "single", group: "", q: "", sort: "tasks", dir: 1, data: null };
+  var $ = function (id) { return document.getElementById(id); };
+
+  try {
+    var saved = JSON.parse(localStorage.getItem("rcsp-lb") || "{}");
+    if (saved.variant === "single" || saved.variant === "multi") state.variant = saved.variant;
+  } catch (e) {}
+  var params = new URLSearchParams(location.search);
+  if (params.get("variant") === "multi" || params.get("variant") === "single") state.variant = params.get("variant");
+
+  var fmt = function (n) { return n == null ? "–" : n.toLocaleString("en-US"); };
+  var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+    return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]; }); };
+  var gapOf = function (r) { return r.best_ub <= r.best_lb ? 0 : (r.best_ub - r.best_lb) / r.best_ub * 100; };
+  var fmtGap = function (r) { return r.best_ub <= r.best_lb ? "0" : gapOf(r).toFixed(2); };
+  var fmtDate = function (iso) {
+    if (!iso) return null;
+    var d = new Date(iso);
+    return d.toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
+  };
+  var isPaper = function (r) { return !r.issue; };
+  var holderName = function (h) { return h ? (h.name || h.github || "") : ""; };
+  var submitUrl = function (inst, variant) {
+    return "https://github.com/" + REPO + "/issues/new?template=submit-solution.yml" +
+      (inst ? "&instance=" + encodeURIComponent(inst) + "&variant=" + (variant === "multi" ? "Multi-depot" : "Single-depot") : "");
+  };
+  var fileUrl = function (inst, variant) {
+    return "https://github.com/" + REPO + "/blob/" + BRANCH + "/solutions_dashboard/" + variant + "_depot/solution_" + variant + "_depot_" + inst + ".txt";
+  };
+
+  function load(i, quiet) {
+    i = i || 0;
+    if (i >= SOURCES.length) {
+      if (!quiet) $("rows").innerHTML = '<tr><td colspan="9" class="empty">The leaderboard could not be loaded. Try again later.</td></tr>';
+      return;
+    }
+    var url = SOURCES[i] + (SOURCES[i].indexOf("raw.githubusercontent") >= 0 ? "?t=" + Date.now() : "");
+    fetch(url, { cache: "no-store" })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (d) {
+        var changed = !state.data || d.updated !== state.data.updated;
+        state.data = d; if (d.repo) REPO = d.repo;
+        // don't redraw underneath an open submission panel
+        if (changed && !$("sub").open) render();
+      })
+      .catch(function () { load(i + 1, quiet); });
+  }
+  // keep an open page up to date
+  setInterval(function () { if (!document.hidden) load(0, true); }, 60000);
+  document.addEventListener("visibilitychange", function () { if (!document.hidden && state.data) load(0, true); });
+
+  function rowsFor() {
+    var v = state.variant, q = state.q.trim().toLowerCase();
+    var recent = Date.now() - 1000 * 60 * 60 * 24 * 30;
+    return state.data.instances
+      .filter(function (e) { return (!state.group || e.group === state.group) && (!q || e.name.toLowerCase().indexOf(q) >= 0); })
+      .map(function (e) {
+        var r = e[v];
+        return { name: e.name, tasks: e.tasks, group: e.group, best_ub: r.best_ub, best_lb: r.best_lb, gap: gapOf(r),
+          gapText: fmtGap(r), duties: r.duties, holder: holderName(r.holder), h: r.holder, date: r.date,
+          paper: isPaper(r), issue: r.issue, isNew: r.date && new Date(r.date).getTime() > recent && r.issue };
+      })
+      .sort(function (a, b) {
+        var k = state.sort, x = a[k], y = b[k];
+        if (k === "name") { x = a.tasks; y = b.tasks; }
+        if (k === "date") { x = a.date || ""; y = b.date || ""; }
+        if (typeof x === "string") return x.localeCompare(y) * state.dir;
+        return ((x > y) - (x < y)) * state.dir || (a.tasks - b.tasks);
+      });
+  }
+
+  function render() {
+    var d = state.data, v = state.variant;
+    document.querySelectorAll("#variantSeg button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.v === v); });
+    document.querySelectorAll("#groupSeg button").forEach(function (b) { b.setAttribute("aria-pressed", b.dataset.g === state.group); });
+    document.querySelectorAll("#headRow th[data-k]").forEach(function (th) {
+      if (th.dataset.k === state.sort) th.setAttribute("aria-sort", state.dir > 0 ? "ascending" : "descending");
+      else th.removeAttribute("aria-sort");
+    });
+
+    // summary for the chosen variant across all instances
+    var all = d.instances.map(function (e) { return e[v]; });
+    var opt = all.filter(function (r) { return r.best_ub <= r.best_lb; }).length;
+    var mean = all.reduce(function (s, r) { return s + gapOf(r); }, 0) / all.length;
+    var hist = (d.history || []).filter(function (h) { return h.variant === v; });
+    var improved = new Set(hist.map(function (h) { return h.instance; })).size;
+    $("sOpt").innerHTML = opt + ' <small>/ ' + all.length + '</small>';
+    $("sGap").textContent = mean.toFixed(2) + "%";
+    $("sImp").innerHTML = improved + ' <small>instance' + (improved === 1 ? "" : "s") + '</small>';
+    $("sLast").textContent = hist.length ? fmtDate(hist[0].date) : "None yet";
+
+    var maxGap = Math.max.apply(null, all.map(gapOf).concat([0.01]));
+    var rows = rowsFor();
+    $("rows").innerHTML = rows.length ? rows.map(function (r) {
+      var w = Math.max(r.gap > 0 ? 3 : 0, r.gap / maxGap * 100);
+      var holder = r.paper
+        ? '<span class="muted">–</span>'
+        : (r.h && r.h.github ? '<a href="https://github.com/' + esc(r.h.github) + '" title="' + esc([r.h.affiliation, r.h.method].filter(Boolean).join(" · ")) + '">' + esc(r.holder) + '</a>' : esc(r.holder));
+      var since = r.paper ? '<span class="muted">–</span>'
+        : '<a href="https://github.com/' + esc(REPO) + '/issues/' + r.issue + '">' + esc(fmtDate(r.date)) + '</a>';
+      return '<tr>' +
+        '<td><span class="inst mono">' + esc(r.name) + '</span><span class="grp">' + esc(r.group) + '</span></td>' +
+        '<td class="r num col-opt">' + fmt(r.tasks) + '</td>' +
+        '<td class="r num">' + fmt(r.best_ub) + (r.isNew ? '<span class="badge new">new</span>' : '') + '</td>' +
+        '<td class="r num col-opt muted">' + fmt(r.best_lb) + '</td>' +
+        '<td class="r">' + (r.gap === 0 && r.gapText === "0"
+          ? '<span class="badge opt">optimal</span>'
+          : '<div class="gapcell"><span class="num">' + r.gapText + '%</span><span class="gapbar" aria-hidden="true"><i style="width:' + w.toFixed(1) + '%"></i></span></div>') + '</td>' +
+        '<td class="r num col-opt">' + fmt(r.duties) + '</td>' +
+        '<td class="holder col-opt">' + holder + '</td>' +
+        '<td class="col-opt">' + since + '</td>' +
+        '<td class="r"><div class="acts"><a href="' + fileUrl(r.name, v) + '">View</a>' +
+          (r.gapText === "0" ? '' : '<a data-submit data-inst="' + esc(r.name) + '" data-variant="' + v + '" href="' + submitUrl(r.name, v) + '">Improve</a>') + '</div></td>' +
+        '</tr>';
+    }).join("") : '<tr><td colspan="9" class="empty">No instances match this filter.</td></tr>';
+
+    var feed = (d.history || []).slice(0, 8);
+    $("feed").innerHTML = feed.length ? feed.map(function (h) {
+      var pct = (h.previous_ub - h.new_ub) / h.previous_ub * 100;
+      var who = h.holder && h.holder.github
+        ? '<a href="https://github.com/' + esc(h.holder.github) + '">' + esc(holderName(h.holder)) + '</a>' : esc(holderName(h.holder));
+      return '<li><span class="what"><span class="mono">' + esc(h.instance) + '</span> · ' + (h.variant === "multi" ? "multi" : "single") + '-depot</span>' +
+        '<span class="delta num">−' + pct.toFixed(2) + '%</span>' +
+        '<span class="meta"><span class="num">' + fmt(h.previous_ub) + ' → ' + fmt(h.new_ub) + '</span> · ' + who +
+        (h.holder && h.holder.method ? ' · ' + esc(h.holder.method) : '') +
+        ' · <a href="https://github.com/' + esc(REPO) + '/issues/' + h.issue + '">' + esc(fmtDate(h.date)) + '</a></span></li>';
+    }).join("") : '<li><span class="meta">No improvements submitted yet.</span></li>';
+
+    $("updated").textContent = d.updated ? "Data updated " + fmtDate(d.updated) : "";
+    ["submitLink", "submitLink2"].forEach(function (id) { $(id).href = submitUrl(); });
+    $("repoLink").href = "https://github.com/" + REPO;
+    $("fmtLink").href = "https://github.com/" + REPO + "/blob/" + BRANCH + "/solutions/README.md";
+  }
+
+  $("variantSeg").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    state.variant = b.dataset.v;
+    try { localStorage.setItem("rcsp-lb", JSON.stringify({ variant: state.variant })); } catch (err) {}
+    if (state.data) render();
+  });
+  $("groupSeg").addEventListener("click", function (e) {
+    var b = e.target.closest("button"); if (!b) return;
+    state.group = b.dataset.g; if (state.data) render();
+  });
+  $("search").addEventListener("input", function (e) { state.q = e.target.value; if (state.data) render(); });
+  $("headRow").addEventListener("click", function (e) {
+    var th = e.target.closest("th[data-k]"); if (!th) return;
+    var k = th.dataset.k;
+    if (state.sort === k) state.dir = -state.dir; else { state.sort = k; state.dir = (k === "gap" || k === "date") ? -1 : 1; }
+    if (state.data) render();
+  });
+
+  // ---------------------------------------------------------------- submission panel
+  var LS_CREDIT = "rcsp-credit";
+  var credit = {};
+  try { credit = JSON.parse(localStorage.getItem(LS_CREDIT) || "{}") || {}; } catch (e) {}
+  var creditFields = { name: "fName", affiliation: "fAff", method: "fMethod", reference: "fRef" };
+
+  function issueUrl(inst, variant, c) {
+    var q = new URLSearchParams();
+    q.set("template", "submit-solution.yml");
+    if (inst) {
+      q.set("title", "[Submission] " + inst + " (" + variant + "-depot)");
+      q.set("instance", inst);
+      q.set("variant", variant === "multi" ? "Multi-depot" : "Single-depot");
+    }
+    Object.keys(creditFields).forEach(function (k) { if (c && c[k]) q.set(k, c[k]); });
+    return "https://github.com/" + REPO + "/issues/new?" + q.toString();
+  }
+
+  function fillInstanceSelect() {
+    var sel = $("fInst"); if (sel.options.length) return;
+    var groups = {};
+    state.data.instances.slice().sort(function (a, b) { return a.tasks - b.tasks; }).forEach(function (e) {
+      (groups[e.group] = groups[e.group] || []).push(e);
+    });
+    ["Tiny", "Small", "Medium", "Large"].forEach(function (g) {
+      if (!groups[g]) return;
+      var og = document.createElement("optgroup"); og.label = g;
+      groups[g].forEach(function (e) {
+        var o = document.createElement("option"); o.value = e.name; o.textContent = e.name + "  ·  " + e.tasks + " tasks"; og.appendChild(o);
+      });
+      sel.appendChild(og);
+    });
+  }
+
+  function updatePanel() {
+    var inst = $("fInst").value, v = $("fVar").value;
+    var e = state.data.instances.find(function (x) { return x.name === inst; });
+    var c = {};
+    Object.keys(creditFields).forEach(function (k) { c[k] = $(creditFields[k]).value.trim(); });
+    try { localStorage.setItem(LS_CREDIT, JSON.stringify(c)); } catch (err) {}
+    if (!e) return;
+    var r = e[v], optimal = r.best_ub <= r.best_lb;
+    $("tUb").textContent = fmt(r.best_ub);
+    $("tLb").textContent = fmt(r.best_lb);
+    $("tGap").textContent = optimal ? "0%" : fmtGap(r) + "%";
+    var note = $("tNote");
+    note.className = "target-note" + (optimal ? " opt" : "");
+    note.textContent = optimal
+      ? "This instance is solved to optimality, so no solution can improve on it."
+      : "Your solution must cost less than " + fmt(r.best_ub) + " to be accepted." +
+        (r.issue && r.holder ? " Current record by " + holderName(r.holder) + "." : "");
+    var go = $("goGithub");
+    go.href = issueUrl(inst, v, c);
+    go.setAttribute("aria-disabled", optimal ? "true" : "false");
+  }
+
+  function openPanel(inst, variant) {
+    if (!state.data) return false;
+    fillInstanceSelect();
+    if (inst) $("fInst").value = inst;
+    else if (!$("fInst").value) $("fInst").selectedIndex = 0;
+    $("fVar").value = variant || state.variant;
+    Object.keys(creditFields).forEach(function (k) { $(creditFields[k]).value = credit[k] || ""; });
+    updatePanel();
+    var dlg = $("sub");
+    if (typeof dlg.showModal !== "function") return false; // very old browsers: follow the plain link
+    dlg.showModal();
+    return true;
+  }
+
+  ["fInst", "fVar", "fName", "fAff", "fMethod", "fRef"].forEach(function (id) {
+    $(id).addEventListener(id === "fInst" || id === "fVar" ? "change" : "input", updatePanel);
+  });
+  $("goGithub").addEventListener("click", function () { setTimeout(function () { $("sub").close(); }, 100); });
+  $("sub").addEventListener("click", function (e) { if (e.target === this) this.close(); }); // click on backdrop
+
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest("[data-submit]");
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    if (openPanel(a.dataset.inst || "", a.dataset.variant || "")) e.preventDefault();
+  });
+
+  load(0);
+})();
+</script>
+</body>
+</html>

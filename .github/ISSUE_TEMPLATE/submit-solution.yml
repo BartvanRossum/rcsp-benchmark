@@ -1,0 +1,57 @@
+name: Submit a solution
+description: Submit a solution file. It is checked automatically, and if it beats the best known solution it is added to the leaderboard.
+title: "[Submission] "
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tip: the easiest way to submit is through the [leaderboard](https://bartvanrossum.github.io/rcsp-benchmark/), which fills in this form for you.
+
+        Submissions are verified with `checker.jar`. A solution is accepted when it is feasible and **strictly cheaper** than the current best known upper bound for the chosen instance and variant. You'll get the result as a comment within a few minutes.
+
+        The solution file uses the format described in [`solutions/README.md`](https://github.com/BartvanRossum/rcsp-benchmark/blob/main/solutions/README.md): one duty per line, each a space-separated list of connection indices. For the multi-depot variant, indices refer to `connections_multi_depot.txt`.
+  - type: input
+    id: instance
+    attributes:
+      label: Instance
+      description: The instance name, as in the `instances/` folder.
+      placeholder: s6_t450
+    validations:
+      required: true
+  - type: input
+    id: variant
+    attributes:
+      label: Variant
+      description: "`Single-depot` or `Multi-depot`."
+      placeholder: Single-depot
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Solution file
+      description: Drag and drop your `.txt` solution file here, or paste its contents.
+      placeholder: Drop the solution file here
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: How you'd like to be credited on the leaderboard. Defaults to your GitHub username.
+  - type: input
+    id: affiliation
+    attributes:
+      label: Affiliation
+  - type: input
+    id: method
+    attributes:
+      label: Method
+      description: A short description of the method that found the solution.
+  - type: input
+    id: reference
+    attributes:
+      label: Reference
+      description: Optional link to a paper, preprint or code.
+      placeholder: https://
