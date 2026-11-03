@@ -895,8 +895,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s13_t1598</code></td>
 <td align="right">8,590,185</td>
 <td align="right">8,596,695</td>
-<td align="right">8,654,340</td>
-<td align="right">0.67</td>
+<td align="right">8,651,520</td>
+<td align="right">0.63</td>
 <td align="right">149</td>
 <td align="right">7,670,143</td>
 <td align="right">7,672,742</td>
