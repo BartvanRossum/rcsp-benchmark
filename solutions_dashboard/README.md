@@ -362,8 +362,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s5_t501</code></td>
 <td align="right">1,931,348</td>
 <td align="right">1,942,468</td>
-<td align="right">1,951,260</td>
-<td align="right">0.45</td>
+<td align="right">1,945,020</td>
+<td align="right">0.13</td>
 <td align="right">34</td>
 <td align="right">1,871,901</td>
 <td align="right">1,878,394</td>
