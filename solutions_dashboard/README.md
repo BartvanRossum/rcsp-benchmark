@@ -1012,8 +1012,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s15_t2029</code></td>
 <td align="right">11,134,303</td>
 <td align="right">11,140,680</td>
-<td align="right">11,257,260</td>
-<td align="right">1.04</td>
+<td align="right">11,245,500</td>
+<td align="right">0.93</td>
 <td align="right">190</td>
 <td align="right">9,917,645</td>
 <td align="right">9,919,298</td>
