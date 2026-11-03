@@ -1168,8 +1168,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s18_t2550</code></td>
 <td align="right">14,939,689</td>
 <td align="right">14,944,106</td>
-<td align="right">15,041,760</td>
-<td align="right">0.65</td>
+<td align="right">15,030,060</td>
+<td align="right">0.57</td>
 <td align="right">257</td>
 <td align="right">13,480,955</td>
 <td align="right">13,481,910</td>
