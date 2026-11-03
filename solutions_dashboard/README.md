@@ -505,8 +505,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s7_t738</code></td>
 <td align="right">3,958,744</td>
 <td align="right">3,968,197</td>
-<td align="right">3,985,920</td>
-<td align="right">0.44</td>
+<td align="right">3,983,640</td>
+<td align="right">0.39</td>
 <td align="right">68</td>
 <td align="right">3,657,380</td>
 <td align="right">3,661,081</td>
