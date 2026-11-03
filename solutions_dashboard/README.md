@@ -882,7 +882,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s13_t1591</code></td>
 <td align="right">8,716,345</td>
 <td align="right">8,720,590</td>
-<td align="right">8,744,520</td>
+<td align="right">8,743,980</td>
 <td align="right">0.27</td>
 <td align="right">153</td>
 <td align="right">8,246,490</td>
