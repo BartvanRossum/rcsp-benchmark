@@ -1643,17 +1643,18 @@
    "multi": {
     "root_lb": 4768967,
     "best_lb": 4771382,
-    "best_ub": 4787940,
-    "gap": 0.35,
+    "best_ub": 4784520,
+    "gap": 0.27,
     "duties": 86,
     "holder": {
-     "name": "B.T.C. van Rossum",
-     "github": "BartvanRossum",
-     "method": "Branch and price (paper experiments)",
-     "reference": "https://arxiv.org/abs/2606.10081"
+     "name": "Casper",
+     "github": "CasperBazelmans",
+     "affiliation": "Eindhoven University of Technology",
+     "method": "Restricted Master Heuristic",
+     "reference": "https://github.com/CasperBazelmans/CoolPool"
     },
-    "date": null,
-    "issue": null
+    "date": "2026-11-03T20:12:18Z",
+    "issue": 205
    }
   },
   {
@@ -3412,6 +3413,23 @@
   }
  ],
  "history": [
+  {
+   "instance": "s9_t972",
+   "variant": "multi",
+   "previous_ub": 4787940,
+   "new_ub": 4784520,
+   "best_lb": 4771382,
+   "duties": 86,
+   "holder": {
+    "name": "Casper",
+    "github": "CasperBazelmans",
+    "affiliation": "Eindhoven University of Technology",
+    "method": "Restricted Master Heuristic",
+    "reference": "https://github.com/CasperBazelmans/CoolPool"
+   },
+   "date": "2026-11-03T20:12:18Z",
+   "issue": 205
+  },
   {
    "instance": "s6_t580",
    "variant": "single",
@@ -6332,5 +6350,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-03T20:11:37Z"
+ "updated": "2026-11-03T20:12:18Z"
 }
