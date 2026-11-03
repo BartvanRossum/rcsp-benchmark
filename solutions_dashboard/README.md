@@ -484,8 +484,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">58</td>
 <td align="right">3,084,196</td>
 <td align="right">3,087,013</td>
-<td align="right">3,096,240</td>
-<td align="right">0.30</td>
+<td align="right">3,091,560</td>
+<td align="right">0.15</td>
 <td align="right">55</td>
 </tr>
 <tr>
