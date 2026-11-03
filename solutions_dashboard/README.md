@@ -570,8 +570,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s8_t872</code></td>
 <td align="right">5,253,048</td>
 <td align="right">5,265,660</td>
-<td align="right">5,282,520</td>
-<td align="right">0.32</td>
+<td align="right">5,280,840</td>
+<td align="right">0.29</td>
 <td align="right">91</td>
 <td align="right">4,904,474</td>
 <td align="right">4,907,288</td>
