@@ -1207,8 +1207,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s18_t2648</code></td>
 <td align="right">13,801,297</td>
 <td align="right">13,806,594</td>
-<td align="right">13,921,500</td>
-<td align="right">0.83</td>
+<td align="right">13,907,280</td>
+<td align="right">0.72</td>
 <td align="right">234</td>
 <td align="right">12,094,401</td>
 <td align="right">12,095,027</td>
