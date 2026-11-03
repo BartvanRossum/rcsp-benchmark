@@ -1256,15 +1256,15 @@
    "single": {
     "root_lb": 3867536,
     "best_lb": 3873529,
-    "best_ub": 3880920,
-    "gap": 0.19,
+    "best_ub": 3880140,
+    "gap": 0.17,
     "duties": 67,
     "holder": {
      "name": "Bart",
      "github": "BartvanRossum"
     },
-    "date": "2026-11-03T14:22:57Z",
-    "issue": 56
+    "date": "2026-11-03T16:45:18Z",
+    "issue": 120
    },
    "multi": {
     "root_lb": 3619377,
@@ -3436,6 +3436,20 @@
  ],
  "history": [
   {
+   "instance": "s7_t695",
+   "variant": "single",
+   "previous_ub": 3880920,
+   "new_ub": 3880140,
+   "best_lb": 3873529,
+   "duties": 67,
+   "holder": {
+    "name": "Bart",
+    "github": "BartvanRossum"
+   },
+   "date": "2026-11-03T16:45:18Z",
+   "issue": 120
+  },
+  {
    "instance": "s13_t1286",
    "variant": "single",
    "previous_ub": 8147340,
@@ -5121,5 +5135,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-03T16:45:10Z"
+ "updated": "2026-11-03T16:45:18Z"
 }
