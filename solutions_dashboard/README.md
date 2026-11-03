@@ -978,8 +978,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">177</td>
 <td align="right">9,112,295</td>
 <td align="right">9,114,199</td>
-<td align="right">9,140,520</td>
-<td align="right">0.29</td>
+<td align="right">9,139,560</td>
+<td align="right">0.28</td>
 <td align="right">164</td>
 </tr>
 <tr>
