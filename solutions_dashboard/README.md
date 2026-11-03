@@ -1298,8 +1298,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s20_t2668</code></td>
 <td align="right">15,799,233</td>
 <td align="right">15,802,963</td>
-<td align="right">15,861,120</td>
-<td align="right">0.37</td>
+<td align="right">15,855,660</td>
+<td align="right">0.33</td>
 <td align="right">274</td>
 <td align="right">13,605,974</td>
 <td align="right">13,606,853</td>
