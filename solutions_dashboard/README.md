@@ -1233,7 +1233,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s19_t2484</code></td>
 <td align="right">15,219,679</td>
 <td align="right">15,225,464</td>
-<td align="right">15,367,500</td>
+<td align="right">15,366,360</td>
 <td align="right">0.92</td>
 <td align="right">261</td>
 <td align="right">12,461,767</td>
