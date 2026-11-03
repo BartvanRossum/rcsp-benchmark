@@ -960,8 +960,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s15_t1713</code></td>
 <td align="right">10,034,985</td>
 <td align="right">10,041,287</td>
-<td align="right">10,122,720</td>
-<td align="right">0.80</td>
+<td align="right">10,113,000</td>
+<td align="right">0.71</td>
 <td align="right">172</td>
 <td align="right">8,823,104</td>
 <td align="right">8,825,561</td>
