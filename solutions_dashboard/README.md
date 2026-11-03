@@ -835,8 +835,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">140</td>
 <td align="right">7,056,461</td>
 <td align="right">7,058,781</td>
-<td align="right">7,090,320</td>
-<td align="right">0.44</td>
+<td align="right">7,089,360</td>
+<td align="right">0.43</td>
 <td align="right">124</td>
 </tr>
 <tr>
