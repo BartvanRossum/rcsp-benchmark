@@ -1311,8 +1311,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s20_t2921</code></td>
 <td align="right">18,007,663</td>
 <td align="right">18,011,628</td>
-<td align="right">18,123,540</td>
-<td align="right">0.62</td>
+<td align="right">18,121,920</td>
+<td align="right">0.61</td>
 <td align="right">310</td>
 <td align="right">15,992,132</td>
 <td align="right">15,993,143</td>
