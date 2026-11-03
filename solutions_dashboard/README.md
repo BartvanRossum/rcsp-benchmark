@@ -1116,8 +1116,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s17_t2214</code></td>
 <td align="right">12,387,240</td>
 <td align="right">12,391,876</td>
-<td align="right">12,441,960</td>
-<td align="right">0.40</td>
+<td align="right">12,436,140</td>
+<td align="right">0.36</td>
 <td align="right">216</td>
 <td align="right">10,657,805</td>
 <td align="right">10,659,956</td>
