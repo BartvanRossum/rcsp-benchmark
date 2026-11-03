@@ -661,8 +661,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s10_t928</code></td>
 <td align="right">5,818,100</td>
 <td align="right">5,831,520</td>
-<td align="right">5,900,040</td>
-<td align="right">1.16</td>
+<td align="right">5,899,140</td>
+<td align="right">1.15</td>
 <td align="right">103</td>
 <td align="right">5,213,343</td>
 <td align="right">5,217,440</td>
