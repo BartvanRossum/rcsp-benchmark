@@ -1303,7 +1303,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">274</td>
 <td align="right">13,605,974</td>
 <td align="right">13,606,853</td>
-<td align="right">13,661,700</td>
+<td align="right">13,660,920</td>
 <td align="right">0.40</td>
 <td align="right">253</td>
 </tr>
