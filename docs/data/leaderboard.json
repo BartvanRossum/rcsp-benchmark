@@ -2360,17 +2360,17 @@
    "multi": {
     "root_lb": 8222074,
     "best_lb": 8224192,
-    "best_ub": 8245860,
+    "best_ub": 8245500,
     "gap": 0.26,
     "duties": 150,
     "holder": {
-     "name": "B.T.C. van Rossum",
+     "name": "Erwin Abbink",
      "github": "BartvanRossum",
-     "method": "Branch and price (paper experiments)",
-     "reference": "https://arxiv.org/abs/2606.10081"
+     "affiliation": "Nederlandse Spoorwegen",
+     "method": "Heuristic with volume algorithm and column generation"
     },
-    "date": null,
-    "issue": null
+    "date": "2026-11-06T07:59:17Z",
+    "issue": 226
    }
   },
   {
@@ -3436,6 +3436,22 @@
   }
  ],
  "history": [
+  {
+   "instance": "s14_t1500",
+   "variant": "multi",
+   "previous_ub": 8245860,
+   "new_ub": 8245500,
+   "best_lb": 8224192,
+   "duties": 150,
+   "holder": {
+    "name": "Erwin Abbink",
+    "github": "BartvanRossum",
+    "affiliation": "Nederlandse Spoorwegen",
+    "method": "Heuristic with volume algorithm and column generation"
+   },
+   "date": "2026-11-06T07:59:17Z",
+   "issue": 226
+  },
   {
    "instance": "s14_t1629",
    "variant": "multi",
@@ -6694,5 +6710,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-06T07:59:14Z"
+ "updated": "2026-11-06T07:59:17Z"
 }

@@ -913,7 +913,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">154</td>
 <td align="right">8,222,074</td>
 <td align="right">8,224,192</td>
-<td align="right">8,245,860</td>
+<td align="right">8,245,500</td>
 <td align="right">0.26</td>
 <td align="right">150</td>
 </tr>
