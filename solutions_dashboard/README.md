@@ -1004,7 +1004,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">204</td>
 <td align="right">10,117,389</td>
 <td align="right">10,119,161</td>
-<td align="right">10,152,660</td>
+<td align="right">10,152,300</td>
 <td align="right">0.33</td>
 <td align="right">186</td>
 </tr>
