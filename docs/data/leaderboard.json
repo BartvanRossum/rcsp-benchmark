@@ -2260,18 +2260,17 @@
    "multi": {
     "root_lb": 8128086,
     "best_lb": 8130272,
-    "best_ub": 8156400,
-    "gap": 0.32,
+    "best_ub": 8152260,
+    "gap": 0.27,
     "duties": 146,
     "holder": {
-     "name": "Casper",
-     "github": "CasperBazelmans",
-     "affiliation": "Eindhoven University of Technology",
-     "method": "Restricted Master Heuristic",
-     "reference": "https://github.com/CasperBazelmans/CoolPool"
+     "name": "Erwin Abbink",
+     "github": "BartvanRossum",
+     "affiliation": "Nederlandse Spoorwegen",
+     "method": "Heuristic with volume algorithm and column generation"
     },
-    "date": "2026-11-03T19:54:51Z",
-    "issue": 196
+    "date": "2026-11-06T07:58:56Z",
+    "issue": 224
    }
   },
   {
@@ -3436,6 +3435,22 @@
   }
  ],
  "history": [
+  {
+   "instance": "s13_t1532",
+   "variant": "multi",
+   "previous_ub": 8156400,
+   "new_ub": 8152260,
+   "best_lb": 8130272,
+   "duties": 146,
+   "holder": {
+    "name": "Erwin Abbink",
+    "github": "BartvanRossum",
+    "affiliation": "Nederlandse Spoorwegen",
+    "method": "Heuristic with volume algorithm and column generation"
+   },
+   "date": "2026-11-06T07:58:56Z",
+   "issue": 224
+  },
   {
    "instance": "s13_t1372",
    "variant": "multi",
@@ -6630,5 +6645,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-06T07:58:48Z"
+ "updated": "2026-11-06T07:58:56Z"
 }
