@@ -900,8 +900,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">149</td>
 <td align="right">7,670,143</td>
 <td align="right">7,672,742</td>
-<td align="right">7,700,520</td>
-<td align="right">0.36</td>
+<td align="right">7,699,320</td>
+<td align="right">0.35</td>
 <td align="right">139</td>
 </tr>
 <tr>

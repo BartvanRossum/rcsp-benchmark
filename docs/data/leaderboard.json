@@ -2314,17 +2314,15 @@
    "multi": {
     "root_lb": 7670143,
     "best_lb": 7672742,
-    "best_ub": 7700520,
-    "gap": 0.36,
+    "best_ub": 7699320,
+    "gap": 0.35,
     "duties": 139,
     "holder": {
-     "name": "Erwin Abbink",
-     "github": "BartvanRossum",
-     "affiliation": "Nederlandse Spoorwegen",
-     "method": "Heuristic with volume algorithm and column generation"
+     "name": "Bart",
+     "github": "BartvanRossum"
     },
-    "date": "2026-11-06T07:58:59Z",
-    "issue": 225
+    "date": "2026-11-06T09:24:25Z",
+    "issue": 278
    }
   },
   {
@@ -3435,6 +3433,20 @@
   }
  ],
  "history": [
+  {
+   "instance": "s13_t1598",
+   "variant": "multi",
+   "previous_ub": 7700520,
+   "new_ub": 7699320,
+   "best_lb": 7672742,
+   "duties": 139,
+   "holder": {
+    "name": "Bart",
+    "github": "BartvanRossum"
+   },
+   "date": "2026-11-06T09:24:25Z",
+   "issue": 278
+  },
   {
    "instance": "s18_t2641",
    "variant": "single",
@@ -7447,5 +7459,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-06T08:49:53Z"
+ "updated": "2026-11-06T09:24:25Z"
 }
