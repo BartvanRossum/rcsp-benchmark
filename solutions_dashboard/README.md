@@ -458,8 +458,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">61</td>
 <td align="right">3,280,091</td>
 <td align="right">3,284,272</td>
-<td align="right">3,294,180</td>
-<td align="right">0.30</td>
+<td align="right">3,291,600</td>
+<td align="right">0.22</td>
 <td align="right">58</td>
 </tr>
 <tr>
