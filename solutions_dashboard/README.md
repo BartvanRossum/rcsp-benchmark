@@ -687,8 +687,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s9_t1020</code></td>
 <td align="right">5,656,977</td>
 <td align="right">5,662,419</td>
-<td align="right">5,691,660</td>
-<td align="right">0.51</td>
+<td align="right">5,686,380</td>
+<td align="right">0.42</td>
 <td align="right">97</td>
 <td align="right">5,161,683</td>
 <td align="right">5,165,267</td>
