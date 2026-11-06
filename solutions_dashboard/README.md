@@ -1285,7 +1285,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s19_t2744</code></td>
 <td align="right">15,100,876</td>
 <td align="right">15,104,590</td>
-<td align="right">15,192,780</td>
+<td align="right">15,192,300</td>
 <td align="right">0.58</td>
 <td align="right">259</td>
 <td align="right">13,331,065</td>
