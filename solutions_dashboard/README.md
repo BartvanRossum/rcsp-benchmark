@@ -445,8 +445,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">63</td>
 <td align="right">3,375,250</td>
 <td align="right">3,385,253</td>
-<td align="right">3,391,680</td>
-<td align="right">0.19</td>
+<td align="right">3,390,780</td>
+<td align="right">0.16</td>
 <td align="right">60</td>
 </tr>
 <tr>
