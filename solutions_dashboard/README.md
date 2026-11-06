@@ -601,8 +601,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">81</td>
 <td align="right">4,212,572</td>
 <td align="right">4,216,509</td>
-<td align="right">4,232,580</td>
-<td align="right">0.38</td>
+<td align="right">4,231,800</td>
+<td align="right">0.36</td>
 <td align="right">76</td>
 </tr>
 <tr>
