@@ -1246,7 +1246,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s19_t2661</code></td>
 <td align="right">18,565,600</td>
 <td align="right">18,571,086</td>
-<td align="right">18,709,440</td>
+<td align="right">18,709,380</td>
 <td align="right">0.74</td>
 <td align="right">317</td>
 <td align="right">14,820,822</td>
