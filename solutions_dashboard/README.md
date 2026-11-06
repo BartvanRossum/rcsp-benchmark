@@ -557,7 +557,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s8_t734</code></td>
 <td align="right">3,793,613</td>
 <td align="right">3,803,805</td>
-<td align="right">3,821,700</td>
+<td align="right">3,821,580</td>
 <td align="right">0.47</td>
 <td align="right">67</td>
 <td align="right">3,516,953</td>
