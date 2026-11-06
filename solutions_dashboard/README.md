@@ -1155,7 +1155,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s18_t2395</code></td>
 <td align="right">15,425,380</td>
 <td align="right">15,429,645</td>
-<td align="right">15,515,040</td>
+<td align="right">15,514,260</td>
 <td align="right">0.55</td>
 <td align="right">263</td>
 <td align="right">13,764,435</td>
