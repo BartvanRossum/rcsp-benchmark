@@ -544,7 +544,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s8_t694</code></td>
 <td align="right">4,541,909</td>
 <td align="right">4,553,863</td>
-<td align="right">4,571,280</td>
+<td align="right">4,571,160</td>
 <td align="right">0.38</td>
 <td align="right">80</td>
 <td align="right">4,270,748</td>
