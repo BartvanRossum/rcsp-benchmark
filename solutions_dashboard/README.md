@@ -1173,7 +1173,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">257</td>
 <td align="right">13,480,955</td>
 <td align="right">13,481,910</td>
-<td align="right">13,533,540</td>
+<td align="right">13,533,060</td>
 <td align="right">0.38</td>
 <td align="right">243</td>
 </tr>
