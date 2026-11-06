@@ -700,7 +700,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s10_t1014</code></td>
 <td align="right">5,784,168</td>
 <td align="right">5,793,198</td>
-<td align="right">5,812,920</td>
+<td align="right">5,812,680</td>
 <td align="right">0.34</td>
 <td align="right">102</td>
 <td align="right">5,415,092</td>
