@@ -817,8 +817,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s12_t1498</code></td>
 <td align="right">7,951,231</td>
 <td align="right">7,960,595</td>
-<td align="right">8,028,060</td>
-<td align="right">0.84</td>
+<td align="right">8,026,800</td>
+<td align="right">0.82</td>
 <td align="right">136</td>
 <td align="right">7,141,899</td>
 <td align="right">7,145,873</td>
