@@ -575,8 +575,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">91</td>
 <td align="right">4,904,474</td>
 <td align="right">4,907,288</td>
-<td align="right">4,924,980</td>
-<td align="right">0.36</td>
+<td align="right">4,920,900</td>
+<td align="right">0.28</td>
 <td align="right">86</td>
 </tr>
 <tr>
