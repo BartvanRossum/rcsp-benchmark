@@ -752,8 +752,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s11_t1151</code></td>
 <td align="right">6,781,233</td>
 <td align="right">6,790,106</td>
-<td align="right">6,844,140</td>
-<td align="right">0.79</td>
+<td align="right">6,841,860</td>
+<td align="right">0.76</td>
 <td align="right">117</td>
 <td align="right">6,158,369</td>
 <td align="right">6,161,425</td>
