@@ -1901,16 +1901,15 @@
    "single": {
     "root_lb": 6694088,
     "best_lb": 6700406,
-    "best_ub": 6716880,
-    "gap": 0.25,
+    "best_ub": 6707580,
+    "gap": 0.11,
     "duties": 115,
     "holder": {
-     "name": "CasperBazelmans",
-     "github": "CasperBazelmans",
-     "method": "CoolPool: column generation with heuristic labelling pricing, ruin and recreate / HGS, diving and a final MIP over the column pool"
+     "name": "erwin-abbink-ns",
+     "github": "erwin-abbink-ns"
     },
-    "date": "2026-11-07T11:17:07Z",
-    "issue": 299
+    "date": "2026-11-07T16:55:30Z",
+    "issue": 308
    },
    "multi": {
     "root_lb": 6140054,
@@ -3424,6 +3423,20 @@
   }
  ],
  "history": [
+  {
+   "instance": "s11_t1078",
+   "variant": "single",
+   "previous_ub": 6716880,
+   "new_ub": 6707580,
+   "best_lb": 6700406,
+   "duties": 115,
+   "holder": {
+    "name": "erwin-abbink-ns",
+    "github": "erwin-abbink-ns"
+   },
+   "date": "2026-11-07T16:55:30Z",
+   "issue": 308
+  },
   {
    "instance": "s11_t1151",
    "variant": "single",
@@ -7865,5 +7878,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-07T16:15:55Z"
+ "updated": "2026-11-07T16:55:30Z"
 }
