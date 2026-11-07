@@ -908,8 +908,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s14_t1500</code></td>
 <td align="right">8,835,895</td>
 <td align="right">8,845,046</td>
-<td align="right">8,874,840</td>
-<td align="right">0.34</td>
+<td align="right">8,874,060</td>
+<td align="right">0.33</td>
 <td align="right">154</td>
 <td align="right">8,222,074</td>
 <td align="right">8,224,192</td>
