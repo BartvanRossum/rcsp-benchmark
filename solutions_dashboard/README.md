@@ -739,9 +739,9 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s11_t1078</code></td>
 <td align="right">6,694,088</td>
 <td align="right">6,700,406</td>
-<td align="right">6,732,300</td>
-<td align="right">0.47</td>
-<td align="right">116</td>
+<td align="right">6,716,880</td>
+<td align="right">0.25</td>
+<td align="right">115</td>
 <td align="right">6,140,054</td>
 <td align="right">6,142,352</td>
 <td align="right">6,160,380</td>

@@ -1901,15 +1901,16 @@
    "single": {
     "root_lb": 6694088,
     "best_lb": 6700406,
-    "best_ub": 6732300,
-    "gap": 0.47,
-    "duties": 116,
+    "best_ub": 6716880,
+    "gap": 0.25,
+    "duties": 115,
     "holder": {
-     "name": "Bart",
-     "github": "BartvanRossum"
+     "name": "CasperBazelmans",
+     "github": "CasperBazelmans",
+     "method": "CoolPool: column generation with heuristic labelling pricing, ruin and recreate / HGS, diving and a final MIP over the column pool"
     },
-    "date": "2026-11-03T14:17:55Z",
-    "issue": 17
+    "date": "2026-11-07T11:17:07Z",
+    "issue": 299
    },
    "multi": {
     "root_lb": 6140054,
@@ -3425,6 +3426,21 @@
   }
  ],
  "history": [
+  {
+   "instance": "s11_t1078",
+   "variant": "single",
+   "previous_ub": 6732300,
+   "new_ub": 6716880,
+   "best_lb": 6700406,
+   "duties": 115,
+   "holder": {
+    "name": "CasperBazelmans",
+    "github": "CasperBazelmans",
+    "method": "CoolPool: column generation with heuristic labelling pricing, ruin and recreate / HGS, diving and a final MIP over the column pool"
+   },
+   "date": "2026-11-07T11:17:07Z",
+   "issue": 299
+  },
   {
    "instance": "s20_t3016",
    "variant": "multi",
@@ -7739,5 +7755,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-06T17:23:09Z"
+ "updated": "2026-11-07T11:17:07Z"
 }
