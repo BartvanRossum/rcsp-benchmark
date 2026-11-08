@@ -427,8 +427,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s6_t580</code></td>
 <td align="right">4,521,585</td>
 <td align="right">4,534,807</td>
-<td align="right">4,550,760</td>
-<td align="right">0.35</td>
+<td align="right">4,542,180</td>
+<td align="right">0.16</td>
 <td align="right">79</td>
 <td align="right">4,312,151</td>
 <td align="right">4,320,132</td>
