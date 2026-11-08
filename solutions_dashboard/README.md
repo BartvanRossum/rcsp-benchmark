@@ -297,8 +297,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s5_t385</code></td>
 <td align="right">1,642,921</td>
 <td align="right">1,651,380</td>
-<td align="right">1,652,040</td>
-<td align="right">0.04</td>
+<td align="right">1,651,380</td>
+<td align="right">0</td>
 <td align="right">29</td>
 <td align="right">1,570,116</td>
 <td align="right">1,571,880</td>
