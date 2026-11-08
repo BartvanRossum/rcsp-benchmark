@@ -388,8 +388,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td><code>s6_t514</code></td>
 <td align="right">3,514,748</td>
 <td align="right">3,528,422</td>
-<td align="right">3,532,800</td>
-<td align="right">0.12</td>
+<td align="right">3,531,180</td>
+<td align="right">0.08</td>
 <td align="right">61</td>
 <td align="right">3,196,426</td>
 <td align="right">3,200,895</td>
