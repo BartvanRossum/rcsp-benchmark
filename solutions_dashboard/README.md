@@ -1238,8 +1238,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">261</td>
 <td align="right">12,461,767</td>
 <td align="right">12,463,222</td>
-<td align="right">12,524,760</td>
-<td align="right">0.49</td>
+<td align="right">12,522,420</td>
+<td align="right">0.47</td>
 <td align="right">226</td>
 </tr>
 <tr>
