@@ -1017,8 +1017,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">190</td>
 <td align="right">9,917,645</td>
 <td align="right">9,919,298</td>
-<td align="right">9,958,740</td>
-<td align="right">0.40</td>
+<td align="right">9,955,500</td>
+<td align="right">0.36</td>
 <td align="right">177</td>
 </tr>
 <tr>
