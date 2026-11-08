@@ -991,7 +991,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">161</td>
 <td align="right">8,622,494</td>
 <td align="right">8,624,236</td>
-<td align="right">8,653,620</td>
+<td align="right">8,653,260</td>
 <td align="right">0.34</td>
 <td align="right">158</td>
 </tr>
