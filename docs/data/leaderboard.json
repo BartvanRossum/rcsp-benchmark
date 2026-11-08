@@ -3274,15 +3274,15 @@
    "multi": {
     "root_lb": 14476229,
     "best_lb": 14477151,
-    "best_ub": 14524860,
+    "best_ub": 14524620,
     "gap": 0.33,
     "duties": 258,
     "holder": {
-     "name": "Bart",
-     "github": "BartvanRossum"
+     "name": "erwin-abbink-ns",
+     "github": "erwin-abbink-ns"
     },
-    "date": "2026-11-06T09:25:21Z",
-    "issue": 286
+    "date": "2026-11-08T10:39:35Z",
+    "issue": 320
    }
   },
   {
@@ -3419,6 +3419,20 @@
   }
  ],
  "history": [
+  {
+   "instance": "s19_t2711",
+   "variant": "multi",
+   "previous_ub": 14524860,
+   "new_ub": 14524620,
+   "best_lb": 14477151,
+   "duties": 258,
+   "holder": {
+    "name": "erwin-abbink-ns",
+    "github": "erwin-abbink-ns"
+   },
+   "date": "2026-11-08T10:39:35Z",
+   "issue": 320
+  },
   {
    "instance": "s20_t2921",
    "variant": "multi",
@@ -8028,5 +8042,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-08T09:56:56Z"
+ "updated": "2026-11-08T10:39:35Z"
 }
