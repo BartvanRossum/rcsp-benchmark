@@ -1569,17 +1569,15 @@
    "multi": {
     "root_lb": 3982069,
     "best_lb": 3986176,
-    "best_ub": 3992460,
-    "gap": 0.16,
+    "best_ub": 3992040,
+    "gap": 0.15,
     "duties": 72,
     "holder": {
-     "name": "B.T.C. van Rossum",
-     "github": "BartvanRossum",
-     "method": "Branch and price (paper experiments)",
-     "reference": "https://arxiv.org/abs/2606.10081"
+     "name": "erwin-abbink-ns",
+     "github": "erwin-abbink-ns"
     },
-    "date": null,
-    "issue": null
+    "date": "2026-11-09T15:00:09Z",
+    "issue": 338
    }
   },
   {
@@ -3398,6 +3396,20 @@
   }
  ],
  "history": [
+  {
+   "instance": "s9_t784",
+   "variant": "multi",
+   "previous_ub": 3992460,
+   "new_ub": 3992040,
+   "best_lb": 3986176,
+   "duties": 72,
+   "holder": {
+    "name": "erwin-abbink-ns",
+    "github": "erwin-abbink-ns"
+   },
+   "date": "2026-11-09T15:00:09Z",
+   "issue": 338
+  },
   {
    "instance": "s8_t872",
    "variant": "multi",
@@ -8259,5 +8271,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-09T10:16:05Z"
+ "updated": "2026-11-09T15:00:09Z"
 }
