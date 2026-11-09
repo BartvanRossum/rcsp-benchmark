@@ -757,8 +757,8 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">117</td>
 <td align="right">6,158,369</td>
 <td align="right">6,161,425</td>
-<td align="right">6,173,640</td>
-<td align="right">0.20</td>
+<td align="right">6,173,460</td>
+<td align="right">0.19</td>
 <td align="right">111</td>
 </tr>
 <tr>
