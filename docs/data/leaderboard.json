@@ -1639,18 +1639,15 @@
    "multi": {
     "root_lb": 4768967,
     "best_lb": 4771382,
-    "best_ub": 4784520,
+    "best_ub": 4784160,
     "gap": 0.27,
     "duties": 86,
     "holder": {
-     "name": "Casper",
-     "github": "CasperBazelmans",
-     "affiliation": "Eindhoven University of Technology",
-     "method": "Restricted Master Heuristic",
-     "reference": "https://github.com/CasperBazelmans/CoolPool"
+     "name": "erwin-abbink-ns",
+     "github": "erwin-abbink-ns"
     },
-    "date": "2026-11-03T20:12:18Z",
-    "issue": 205
+    "date": "2026-11-09T07:18:10Z",
+    "issue": 336
    }
   },
   {
@@ -3403,6 +3400,20 @@
   }
  ],
  "history": [
+  {
+   "instance": "s9_t972",
+   "variant": "multi",
+   "previous_ub": 4784520,
+   "new_ub": 4784160,
+   "best_lb": 4771382,
+   "duties": 86,
+   "holder": {
+    "name": "erwin-abbink-ns",
+    "github": "erwin-abbink-ns"
+   },
+   "date": "2026-11-09T07:18:10Z",
+   "issue": 336
+  },
   {
    "instance": "s12_t1049",
    "variant": "multi",
@@ -8236,5 +8247,5 @@
    "issue": 2
   }
  ],
- "updated": "2026-11-09T05:12:25Z"
+ "updated": "2026-11-09T07:18:10Z"
 }

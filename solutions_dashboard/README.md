@@ -640,7 +640,7 @@ The file format is described in [`solutions/README.md`](../solutions/README.md).
 <td align="right">90</td>
 <td align="right">4,768,967</td>
 <td align="right">4,771,382</td>
-<td align="right">4,784,520</td>
+<td align="right">4,784,160</td>
 <td align="right">0.27</td>
 <td align="right">86</td>
 </tr>
